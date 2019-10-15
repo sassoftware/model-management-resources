@@ -1,0 +1,62 @@
+[
+  {
+    "name": "CLAGE",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "CLNO",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "DEBTINC",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "DELINQ",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "DEROG",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "JOB",
+    "length": 7,
+    "type": "string"
+  },
+  {
+    "name": "LOAN",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "MORTDUE",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "NINQ",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "REASON",
+    "length": 7,
+    "type": "string"
+  },
+  {
+    "name": "VALUE",
+    "length": 12,
+    "type": "decimal"
+  },
+  {
+    "name": "YOJ",
+    "length": 12,
+    "type": "decimal"
+  }
+]

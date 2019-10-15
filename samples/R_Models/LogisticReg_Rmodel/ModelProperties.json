@@ -1,0 +1,20 @@
+{
+  "externalUrl": "",
+  "modelVersionName": "2.0",
+  "trainTable": "",
+  "trainCodeType": "r",
+  "description": "",
+  "tool": "",
+  "toolVersion": "",
+  "targetVariable": "BAD",
+  "scoreCodeType": "r",
+  "externalModelId": "",
+  "createdBy": "sasdemo",
+  "function": "classification",
+  "eventProbVar": "BAD",
+  "modeler": "",
+  "name": "logisticreg-r",
+  "targetEvent": "1",
+  "targetLevel": "",
+  "algorithm": "logisticreg"
+}

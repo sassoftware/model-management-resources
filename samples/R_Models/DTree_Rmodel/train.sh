@@ -1,0 +1,2 @@
+Rscript training.r
+
