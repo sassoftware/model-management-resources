@@ -1,0 +1,2 @@
+To train a model, you can run the R script "train.r", which loads the hmeq_train.csv as training data.
+To score a model, you can run the R script "score.r", which loads the "<input scoring csv data file>" and "<output scoring csv data file>"

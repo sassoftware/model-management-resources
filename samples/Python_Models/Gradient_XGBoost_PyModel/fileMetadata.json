@@ -1,0 +1,18 @@
+[
+    {
+        "role": "inputVariables",
+        "name": "inputVar.json"
+    },
+    {
+        "role": "outputVariables",
+        "name": "outputVar.json"
+    },
+    {
+        "role": "score",
+        "name": "hmeq_xgboost_score.py"
+    },
+    {
+        "role": "python pickle",
+        "name": "hmeq_xgboost.pickle"
+    }
+]

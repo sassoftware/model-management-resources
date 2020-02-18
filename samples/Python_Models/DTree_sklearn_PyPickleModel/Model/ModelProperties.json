@@ -1,0 +1,16 @@
+{
+    "name": "Home Equity Loan Classification Tree",
+    "description": " : BAD = JOB + REASON + CLAGE + CLNO + DEBTINC + DELINQ + DEROG + NINQ",
+    "function": "classification",
+    "scoreCodeType": "python",
+    "trainTable": " ",
+    "trainCodeType": "Python",
+    "algorithm": "tree",
+    "targetVariable": "BAD",
+    "targetEvent": "1",
+    "targetLevel": "BINARY",
+    "eventProbVar": "EM_EVENTPROBABILITY",
+    "modeler": "sasdemo",
+    "tool": "Python 3",
+    "toolVersion": "3.7.5"
+}
