@@ -1,0 +1,16 @@
+{
+  "trainTable": "",
+  "trainCodeType": "r",
+  "description": "",
+  "tool": "r",
+  "toolVersion": "",
+  "targetVariable": "BAD",
+  "scoreCodeType": "r",
+  "function": "classification",
+  "eventProbVar": "P_BAD1",
+  "modeler": "sasdemo",
+  "name": "DTree_R",
+  "targetEvent": "1",
+  "targetLevel": "BINARY",
+  "algorithm": "Decision Tree"
+}

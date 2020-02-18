@@ -1,0 +1,14 @@
+[
+   {
+      "step":"update apt registry ",
+      "command":"apt-get update"
+   },
+   {
+         "step":"add libgomp ",
+         "command":"apt-get install libgomp1"
+      },
+    {
+        "step":"install xgboost ",
+        "command":"pip3 install xgboost"
+     }
+]
