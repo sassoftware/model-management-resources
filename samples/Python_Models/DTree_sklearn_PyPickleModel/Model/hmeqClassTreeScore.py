@@ -8,6 +8,7 @@ import math
 import numpy as np
 import pandas as pd
 import pickle
+import settings
 
 # %%
 def scoreHMEQClassTreeModel(JOB, REASON, CLAGE, CLNO, DEBTINC, DELINQ, DEROG, NINQ):
@@ -16,7 +17,7 @@ def scoreHMEQClassTreeModel(JOB, REASON, CLAGE, CLNO, DEBTINC, DELINQ, DEROG, NI
     try:
         _thisModelFit
     except NameError:
-        with open(settings.pickle_path, "rb") as _pFile:
+        with open(settings.pickle_path + "hmeqClassTree.pickle", "rb") as _pFile:
             _thisModelFit = pickle.load(_pFile)
             
     # Threshold for the misclassification error (BAD: 0-No, 1-Yes)
