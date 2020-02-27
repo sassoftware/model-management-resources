@@ -13,14 +13,14 @@ destination_url = host_url + "/modelPublish/destinations/"
 mm_auth = mmAuthorization.mmAuthorization("myAuth")
 
 # admin user id and password
-admin_userId = "SAS_USER_ADMIN_ID"
-user_passwd = "SAS_USER_PASSWD"
+admin_userId = "<SAS_user_admin_ID>"
+user_passwd = "<SAS_user_password>"
 
 # destination name
-dest_name = "MY_CAS_DEST_NAME"
+dest_name = "<my_CAS_destination_name>"
 
-if admin_userId == "SAS_USER_ADMIN_ID":
-    print("Please replace the values in the script with real ones before executing the script!")
+if admin_userId == "<SAS_user_admin_ID>":
+    print("You must replace the example values in this script with valid values before executing the script.")
     exit(1)
 
 admin_auth_token = mm_auth.get_auth_token(host_url, admin_userId, user_passwd)
@@ -32,7 +32,7 @@ destination_cas_headers = {
 }
 
 # create new destination, expecting 201
-print("Creating " + dest_name + " destination...")
+print("Creating the " + dest_name + " destination...")
 
 destination_attrs = {
     "name":dest_name,

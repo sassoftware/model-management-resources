@@ -38,15 +38,15 @@ model_publishing_async_headers = {
     mmAuthorization.AUTHORIZATION_HEADER: mmAuthorization.AUTHORIZATION_TOKEN + auth_token
 }
 
-# # Create and publish the BaseImages to specified destination
+# # Create and publish the Base Images to specified destination.
 # #
 # # Synchronous create python3 base-image
 # # The API call will wait until baseImage is fully created and pushed
 # # The 'imageUrl' property will be showed in the returned body
 # #
 
-# create python3 base-image (with synchronous request)
-# three required fields: 
+# Create Python 3 base image (with synchronous request).
+# Three fields are required:
 # - modelName: 'python'
 # - modelId: must be 'base'
 # - modelVersionid: '3'
