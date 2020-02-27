@@ -13,17 +13,17 @@ destination_url = host_url + "/modelPublish/destinations/"
 mm_auth = mmAuthorization.mmAuthorization("myAuth")
 
 # admin user id and password
-admin_userId = "SAS_USER_ADMIN_ID"
-user_passwd = "SAS_USER_PASSWD"
+admin_userId = "<SAS_user_admin_ID>"
+user_passwd = "<SAS_user_password>"
 
-# the domain which the SAS Credential Service stores AWS credentials
-DOMAIN_NAME = "Domain Name"
+# The domain that the SAS Credentials service stores the AWS credentials.
+DOMAIN_NAME = "<domain_name>"
 
 # the kubernetes cluster name
-K8S_NAME = "K8s Name"
+K8S_NAME = "<K8s_name>"
 
 # destination name
-dest_name = "MY_AWS_DEST_NAME"
+dest_name = "<my_AWS_destination_name>"
 
 # AWS region
 AWS_REGION = "us-east-1"
@@ -31,8 +31,8 @@ AWS_REGION = "us-east-1"
 # the docker daemon is running on tcp socket
 DOCKER_HOST_URL = "tcp://yy.yy.yy.yy:2375"
 
-if K8S_NAME == "K8s Name":
-    print("Please replace the values in the script with real ones before executing the script!")
+if K8S_NAME == "<K8s_name>":
+    print("You must replace the example values in this script with valid values before executing the script.")
     exit(1)
 
 admin_auth_token = mm_auth.get_auth_token(host_url, admin_userId, user_passwd)
@@ -47,8 +47,8 @@ destination_aws_headers = {
     mmAuthorization.AUTHORIZATION_HEADER: mmAuthorization.AUTHORIZATION_TOKEN + admin_auth_token
 }
 
-# create new destination, expecting 201
-print("Creating " + dest_name + " destination...")
+# Create new destination, expect status code 201
+print("Creating the " + dest_name + " destination...")
 
 props = [{"name": "domainId", "value": DOMAIN_NAME}]
 props.append({"name": "region", "value": AWS_REGION})
