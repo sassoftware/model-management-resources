@@ -7,7 +7,6 @@ import os
 import platform
 
 import requests
-import pysftp
 import getpass
 import json
 
@@ -55,8 +54,8 @@ class ModelImport():
         notAuthenticated = True
         
         while notAuthenticated: 
-            username = input('Enter username:')
-            password = getpass.getpass('Enter password for %s:' % username)
+            username = input('Enter a user name:')
+            password = getpass.getpass('Enter the password for %s:' % username)
             authBody = ('grant_type=password&username=' + username +
                         '&password=' + password)
             authReturn = requests.post(self.server + authURI,
@@ -66,7 +65,7 @@ class ModelImport():
                 authToken = authReturn.json()['access_token']
                 notAuthenticated = False
             else:
-                print('Please enter correct user id and password.')
+                print('Please enter a valid user name and password.')
         
         password = ''
         
@@ -94,19 +93,17 @@ class ModelImport():
         headers = {
                 'Origin': self.server,
                 'Authorization': authToken}
-        projectFilter = f'?filter=eq(name, \'{projectName}\')'
-        requestUrl = f'{self.server}/modelRepository/projects{projectFilter}'
+        requestUrl = f'{self.server}/modelRepository/projects?limit=100000'
         projectRequest = requests.get(requestUrl, headers=headers)
         
-        try:
-            projectID = projectRequest.json()['items'][0]['id']
-        except IndexError:
-            print(f'No project named {projectName} could be found.')
-            print(f'Creating a new project named {projectName}.')
+        projectID = [x['id'] for x in projectRequest.json()['items'] if x['name']==projectName]
+        if not projectID:
+            print(f'A project with the name "{projectName}" could not be found.')
+            print(f'A new project with the name "{projectName}" is being created.')
             projectID = self.createNewProject(projectName, authToken)
             return projectID
-            
-        return projectID
+        else:
+            return projectID
 
     def createNewProject(self, projectName, authToken):
         '''
@@ -199,42 +196,42 @@ class ModelImport():
             modelRequest.raise_for_status()
         except requests.exceptions.HTTPError:
             print('Model import failed: ' +
-                  f'A model named {modelPrefix} already exists.')
-            print('Please adjust the zip file name appropriately.')
-        
-    def uploadPickle(pLocalPath, pRemotePath,
-                     host, username, password=None, privateKey=None):
-        #TODO: Remove password from memory as in self.getAccessToken() 
-        #TODO: Obsoleted after 19w47 builds of model manager
-        '''
-        Uploads a local pickle file to a SAS Open Model Manager server via sftp. Set the
-        permission of the pickle file on the server to 777 to allow the score
-        code to use the pickle file.
-        
-        Parameters
-        ---------------
-        pLocalPath : string
-            Local path of the pickle file.
-        pRemotePath : string
-            Remote path on the server for the pickle file's location.
-        host : string
-            Name of the host server to send the pickle file.
-        username : string
-            Server login credential username.
-        password : string, optional
-            Password for SFTP connection attempt. Default is None, in case
-            user is using an RSA/DSA key pairing.
-        privateKey : string, optional
-            Private key location for RSA/DSA key pairing logins. Default is 
-            None.
-        '''
-        
-        # convert windows path format to linux path format
-        if platform.system() == 'Windows':
-            pRemotePath = ('/' + 
-                           os.path.normpath(pRemotePath).replace('\\', '/'))
-        
-        with pysftp.Connection(host, username=username, password=password,
-                               private_key=privateKey) as sftp:
-            sftp.put(pLocalPath, remotepath=pRemotePath)
-            sftp.chmod(pRemotePath, mode=777)
+                  f'A model with the name "{modelPrefix}" already exists.')
+            print('Please specify a unique file name for the ZIP file.')
+
+# The following code is obsolete and was deprecated after the November 2019 release.
+#    def uploadPickle(pLocalPath, pRemotePath,
+#                     host, username, password=None, privateKey=None):
+#        TODO: Remove password from memory as in self.getAccessToken()
+#        '''
+#        Uploads a local pickle file to a SAS Open Model Manager server via sftp. Set the
+#        permission of the pickle file on the server to 777 to allow the score
+#        code to use the pickle file.
+#        
+#        Parameters
+#        ---------------
+#        pLocalPath : string
+#            Local path of the pickle file.
+#        pRemotePath : string
+#            Remote path on the server for the pickle file's location.
+#        host : string
+#            Name of the host server to send the pickle file.
+#        username : string
+#            Server login credential username.
+#        password : string, optional
+#            Password for SFTP connection attempt. Default is None, in case
+#            user is using an RSA/DSA key pairing.
+#        privateKey : string, optional
+#            Private key location for RSA/DSA key pairing logins. Default is 
+#            None.
+#        '''
+#        
+#        # convert windows path format to linux path format
+#        if platform.system() == 'Windows':
+#            pRemotePath = ('/' + 
+#                           os.path.normpath(pRemotePath).replace('\\', '/'))
+#        
+#        with pysftp.Connection(host, username=username, password=password,
+#                               private_key=privateKey) as sftp:
+#            sftp.put(pLocalPath, remotepath=pRemotePath)
+#            sftp.chmod(pRemotePath, mode=777)

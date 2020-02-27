@@ -5,6 +5,7 @@
 import os
 import sys
 
+import getpass
 import json
 import pandas as pd
 from sklearn import metrics
@@ -99,10 +100,10 @@ class JSONFiles():
     def writeModelPropertiesJSON(self, modelName, modelDesc, targetVariable,
                                  modelType, modelPredictors, targetEvent,
                                  numTargetCategories, eventProbVar=None,
-                                 jPath=os.getcwd()):
+                                 jPath=os.getcwd(), modeler=None):
         '''
-        Writes a model properties JSON file. The JSON file format is dictated by 
-        SAS Open Model Manager stipulations and only eventProbVar can be 'None'.
+        Writes a model properties JSON file. The JSON file format is required by the
+        Model Repository API service and only eventProbVar can be 'None'.
         
         Parameters
         ---------------
@@ -125,6 +126,9 @@ class JSONFiles():
         jPath : string, optional
             Location for the output JSON file. The default is the current
             working directory.
+        modeler : string, optional
+            The modeler name to be displayed in the model properties. The
+            default value is None.
             
         Yields
         ---------------
@@ -146,8 +150,12 @@ class JSONFiles():
             
         if eventProbVar is None:
             eventProbVar = 'P_' + targetVariable + targetEvent
-            
-        modeler = os.getlogin()
+        # Replace <myUserID> with the user ID of the modeler that created the model.
+        if modeler is None:
+            try:
+                modeler = getpass.getuser()
+            except OSError:
+                modeler = '<myUserID>'
         
         pythonVersion = sys.version.split(' ', 1)[0]
         
@@ -179,7 +187,7 @@ class JSONFiles():
         Parameters
         ---------------
         modelPrefix : string
-            Variable name for the model to be displayed in model manager 
+            The variable for the model name that is used when naming model files.
             (i.e. hmeqClassTree + [Score.py || .pickle]).
         jPath : string, optional
             Location for the output JSON file. The default value is the current
@@ -365,16 +373,9 @@ class JSONFiles():
                 dataPartitionExists.append(i)
                 
         for j in dataPartitionExists:
-            fitStats = {}
-            
-            if j==0:
-                fitStats['_DataRole_'] = 'VALIDATE'
-            elif j==1:
-                fitStats['_DataRole_'] = 'TRAIN'
-            elif j==2:
-                fitStats['_DataRole_'] = 'TEST'
-            fitStats.update({'_PartInd_': str(i),
-                            '_PartInd__f': f'           {i}'})
+            fitStats = nullJSONDict['data'][j]['dataMap']
+
+            fitStats['_PartInd_'] = j
             
             fpr, tpr, _ = metrics.roc_curve(data[j][0], data[j][1])
         
@@ -419,9 +420,7 @@ class JSONFiles():
             C = metrics.auc(fpr, tpr)
             fitStats['_C_'] = C
         
-            nullJSONDict['data'][j] = {'dataMap': fitStats,
-                                       'rowNumber': j,
-                                       'header': None}
+            nullJSONDict['data'][j]['dataMap'] = fitStats
 
         with open(os.path.join(jPath, 'dmcas_fitstat.json'), 'w') as jFile:
             json.dump(nullJSONDict, jFile, indent=4)            
@@ -1020,7 +1019,7 @@ class JSONFiles():
         paramLabel : string
             Description of the parameter.
         paramOrder : int
-            Order to be displayed in model manager.
+            Order to be displayed in SAS Open Model Manager.
         paramValue : int, float, or str
             Value of the parameter.
                 

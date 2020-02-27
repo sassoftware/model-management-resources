@@ -21,7 +21,7 @@ The [addons](addons/) directory contains how-to information for the following ta
 * create container base images for Python 3 and R models using a Python script
 
 ## Samples
-The [samples](samples/) directory contains sample models for Python and R programming language models.  
+The [samples](samples/) directory contains sample data and models for Python and R programming language models.  
 
 ## Examples
 The [examples](examples/) directory contains examples of Jupyter notebooks and Python code that can be used to perform SAS Open Model Manager tasks.

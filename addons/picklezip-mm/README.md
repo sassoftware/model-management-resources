@@ -2,7 +2,7 @@
 
 ## Overview
 
-The goal of this package is to provide users with a straight forward method to import trained Python models into SAS Model Manager and Open Model Manager. In order to complete this task, the package completes the following:
+The goal of this package is to provide users with a straight forward method to import trained Python models into SAS Model Manager and SAS Open Model Manager. In order to complete this task, the package completes the following:
 
 * Writes `.JSON` files needed for SAS Open Model Manager to read in the model information, which includes the following files:
   * fileMetadata.json specifies the file roles for the names of the input and output variables files, the Python score code file, and the Python pickle file
@@ -24,6 +24,7 @@ Use of this package requires the following:
   * scipy v1.4.0
   * scikit v0.22.1
   * pandas v0.25.3
+  * requests v2.23.0
 
 ## Installation
 
@@ -49,11 +50,11 @@ pip uninstall picklezip-mm
 
 ## Getting Started
 
-The easiest way to get started with the picklezip-mm package is to follow the ImportPythonModel.ipynb notebook in the [examples](./examples) directory. Example data sets and an importable model ZIP file is included in the [samples](./samples/Python_Models/DTree_sklearn_PyPickleModel) directory.
+The easiest way to get started with the picklezip-mm package is to follow the ImportPythonModel.ipynb notebook in the [examples](/examples) directory. Example data sets and an importable model ZIP file is included in the [samples](/samples/Python_Models/DTree_sklearn_PyPickleModel) directory.
 
 
 ## License
 
-This project is licensed under the [Apache 2.0 License](../LICENSE).
+This project is licensed under the [Apache 2.0 License](/LICENSE).
 
 

@@ -36,4 +36,4 @@ class ZipModel():
         
         with zipfile.ZipFile(Path(fileDir) / (modelPrefix + '.zip'), mode='w') as zFile:
             for name in fileNames:
-                zFile.write(Path(fileDir) / name, arcname=name)
+                zFile.write(name, arcname=name)

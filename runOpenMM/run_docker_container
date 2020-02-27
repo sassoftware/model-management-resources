@@ -6,7 +6,7 @@
 
 # Allow running only `./run_docker_container` to show --help output
 function usage() {
-    echo "Example: ./run_docker_container --container-name openmodelmanager --image <registry URL>/<namespace>/<image>:<tag> --order <SAS order> --lang <container language> [--http-port <port>  | --https-port <port>] [--debug, --tls]"
+    echo "Example: ./run_docker_container --container-name openmodelmanager --image <registry URL>/<namespace>/<image>:<tag> --order <SAS order> --lang <container language> [--http-port <port>  | --https-port <port>]"
 }
 
 if [ $# -eq 0 ] ; then
@@ -61,7 +61,7 @@ while [[ $# -gt 0 ]]; do
             SAS_RUN_TLS=true
             ;;
         *)
-            echo -e "\n\nOne or more arguments were not recognized: \n$@"
+            echo -e "\n\nOne or more arguments were not recognized: \n$*"
             echo
             usage
             echo
