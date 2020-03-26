@@ -14,22 +14,22 @@ domains_url = credentials_url + "/domains"
 
 mm_auth = mmAuthorization.mmAuthorization("myAuth")
 
-# admin user id and password
-admin_userId = "SAS_USER_ADMIN_ID"
-user_passwd = "SAS_USER_PASSWD"
+# SAS administrator user ID and password.
+admin_userId = "<SAS_user_admin_ID>"
+user_passwd = "<SAS_user_password>"
 
-# the user who could use the credential
-USER_ID = "SAS_USER_ID"
+# The user who can use the credentials.
+USER_ID = "<SAS_user_ID>"
 
-# AWS secret keys
-AWS_KEY_ID = "AWS Key Id"
-AWS_SECRET_KEY = "AWS Secret Key"
+# AWS secret keys.
+AWS_KEY_ID = "<AWS_Key_ID>"
+AWS_SECRET_KEY = "<AWS_Secret_Key>"
 
-# the domain which the SAS Credential Service uses
-DOMAIN_NAME = "Domain Name"
+# The domain that uses the SAS Credentials service.
+DOMAIN_NAME = "<Domain_Name>"
 
-if AWS_KEY_ID == "AWS Key Id":
-    print("Please replace the values in the script with real ones before executing the script!")
+if AWS_KEY_ID == "<AWS_Key_ID>":
+    print("You must replace the example values in this script with valid values before executing the script.")
     exit(1)
 
 admin_auth_token = mm_auth.get_auth_token(host_url, admin_userId, user_passwd)
@@ -47,7 +47,7 @@ credential_put_header = {
 }
 
 
-# create a domain with type 'password' 
+# Create a domain with the type 'password'.
 my_domain_url = domains_url + "/" + DOMAIN_NAME
 
 domain_attrs = {
@@ -62,7 +62,7 @@ domain = requests.put(my_domain_url,
 print(domain)
 print("created domain", DOMAIN_NAME)
 
-# create a credential for the specified user
+# Create credentials for the specified user.
 my_credential_url = my_domain_url + "/users/" + USER_ID
 
 key_id = AWS_KEY_ID
@@ -85,7 +85,7 @@ domain = requests.put(my_credential_url,
 
 print(domain)
 #pprint.pprint(domain.json())
-print("created credential under domain ", DOMAIN_NAME)
+print("The credentials have been created within the domain ", DOMAIN_NAME)
 
 
 
