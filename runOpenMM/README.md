@@ -14,7 +14,10 @@ This directory contains the scripts to launch and debug the SAS Open Model Manag
 1.  Retrieve the files for this project in the manner you prefer. Place all the files in the same directory location.
 
 2.  Create the sitedefault.yml files according to the comments in the sample file. <br>
-    ***Note:** Setting the SAS administrator in the sitedefault.yml file is recommended. See the bottom of the sitedefault_sample.yml file for an example.*    
+    ***Note:** Setting the SAS administrator in the sitedefault.yml file is recommended. See the bottom of the sitedefault_sample.yml file for an example. 
+    If you do not specify an administrator in the sitedefault.yml file during deployment of SAS Open Model Manager, you must configure an administrator account. 
+    Your SAS Open Model Manager environment is deployed with an initial administrator account that is named sasboot. However, the password for this account has expired by default, so you must reset the password before you can sign in. 
+    For more information, see [Configure an Administrator Account](https://documentation.sas.com/?cdcId=openmmcdc&cdcVersion=1.2&docsetId=openmmag&docsetTarget=p17x92tknnx41cn0zl3rvpyqlcax.htm&locale=en#n13jkzjlfelf11n1xzpghvcqmizn) in the SAS Open Model Manager: Administrator's Guide.*    
 
 3.  Create the sssd.conf file based on documentation from RedHat: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system-level_authentication_guide/sssd <br>
     ***Note:** SAS recommends that you use the Red Hat System Security Services Daemon (SSSD) as a security management tool to manage users and groups. Creating accounts in LDAP and then creating matching local accounts for users and for service ownership is not recommended.*

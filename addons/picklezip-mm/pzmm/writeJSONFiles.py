@@ -5,6 +5,7 @@
 import os
 import sys
 
+import getpass
 import json
 import pandas as pd
 from sklearn import metrics
@@ -99,7 +100,7 @@ class JSONFiles():
     def writeModelPropertiesJSON(self, modelName, modelDesc, targetVariable,
                                  modelType, modelPredictors, targetEvent,
                                  numTargetCategories, eventProbVar=None,
-                                 jPath=os.getcwd()):
+                                 jPath=os.getcwd(), modeler=None):
         '''
         Writes a model properties JSON file. The JSON file format is dictated by 
         SAS Open Model Manager stipulations and only eventProbVar can be 'None'.
@@ -125,6 +126,9 @@ class JSONFiles():
         jPath : string, optional
             Location for the output JSON file. The default is the current
             working directory.
+        modeler : string, optional
+            The modeler name to be displayed in the model properties. The
+            default value is None.
             
         Yields
         ---------------
@@ -146,8 +150,12 @@ class JSONFiles():
             
         if eventProbVar is None:
             eventProbVar = 'P_' + targetVariable + targetEvent
-            
-        modeler = os.getlogin()
+        # Replace <myUserID> with the user ID of the modeler that created the model.
+        if modeler is None:
+            try:
+                modeler = getpass.getuser()
+            except OSError:
+                modeler = '<myUserID>'
         
         pythonVersion = sys.version.split(' ', 1)[0]
         
@@ -373,8 +381,8 @@ class JSONFiles():
                 fitStats['_DataRole_'] = 'TRAIN'
             elif j==2:
                 fitStats['_DataRole_'] = 'TEST'
-            fitStats.update({'_PartInd_': str(i),
-                            '_PartInd__f': f'           {i}'})
+            fitStats.update({'_PartInd_': str(j),
+                            '_PartInd__f': f'           {j}'})
             
             fpr, tpr, _ = metrics.roc_curve(data[j][0], data[j][1])
         
