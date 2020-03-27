@@ -31,7 +31,7 @@ AWS_REGION = "us-east-1"
 # the docker daemon is running on tcp socket
 DOCKER_HOST_URL = "tcp://yy.yy.yy.yy:2375"
 
-if K8S_NAME == "K8s_name":
+if K8S_NAME == "<K8s_name>":
     print("You must replace the example values in this script with valid values before executing the script.")
     exit(1)
 
