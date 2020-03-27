@@ -7,7 +7,6 @@ import os
 import platform
 
 import requests
-import pysftp
 import getpass
 import json
 
@@ -201,40 +200,40 @@ class ModelImport():
             print('Model import failed: ' +
                   f'A model named {modelPrefix} already exists.')
             print('Please adjust the zip file name appropriately.')
-        
-    def uploadPickle(pLocalPath, pRemotePath,
-                     host, username, password=None, privateKey=None):
-        #TODO: Remove password from memory as in self.getAccessToken() 
-        #TODO: Obsoleted after 19w47 builds of model manager
-        '''
-        Uploads a local pickle file to a SAS Open Model Manager server via sftp. Set the
-        permission of the pickle file on the server to 777 to allow the score
-        code to use the pickle file.
-        
-        Parameters
-        ---------------
-        pLocalPath : string
-            Local path of the pickle file.
-        pRemotePath : string
-            Remote path on the server for the pickle file's location.
-        host : string
-            Name of the host server to send the pickle file.
-        username : string
-            Server login credential username.
-        password : string, optional
-            Password for SFTP connection attempt. Default is None, in case
-            user is using an RSA/DSA key pairing.
-        privateKey : string, optional
-            Private key location for RSA/DSA key pairing logins. Default is 
-            None.
-        '''
-        
-        # convert windows path format to linux path format
-        if platform.system() == 'Windows':
-            pRemotePath = ('/' + 
-                           os.path.normpath(pRemotePath).replace('\\', '/'))
-        
-        with pysftp.Connection(host, username=username, password=password,
-                               private_key=privateKey) as sftp:
-            sftp.put(pLocalPath, remotepath=pRemotePath)
-            sftp.chmod(pRemotePath, mode=777)
+
+# The following code is obsolete and was deprecated after the November 2019 release.
+#    def uploadPickle(pLocalPath, pRemotePath,
+#                     host, username, password=None, privateKey=None):
+#        TODO: Remove password from memory as in self.getAccessToken()
+#        '''
+#        Uploads a local pickle file to a SAS Open Model Manager server via sftp. Set the
+#        permission of the pickle file on the server to 777 to allow the score
+#        code to use the pickle file.
+#        
+#        Parameters
+#        ---------------
+#        pLocalPath : string
+#            Local path of the pickle file.
+#        pRemotePath : string
+#            Remote path on the server for the pickle file's location.
+#        host : string
+#            Name of the host server to send the pickle file.
+#        username : string
+#            Server login credential username.
+#        password : string, optional
+#            Password for SFTP connection attempt. Default is None, in case
+#            user is using an RSA/DSA key pairing.
+#        privateKey : string, optional
+#            Private key location for RSA/DSA key pairing logins. Default is 
+#            None.
+#        '''
+#        
+#        # convert windows path format to linux path format
+#        if platform.system() == 'Windows':
+#            pRemotePath = ('/' + 
+#                           os.path.normpath(pRemotePath).replace('\\', '/'))
+#        
+#        with pysftp.Connection(host, username=username, password=password,
+#                               private_key=privateKey) as sftp:
+#            sftp.put(pLocalPath, remotepath=pRemotePath)
+#            sftp.chmod(pRemotePath, mode=777)

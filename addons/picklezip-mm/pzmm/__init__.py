@@ -9,5 +9,4 @@ __dev__ = True
 from pzmm.pickleModel import PickleModel
 from pzmm.uploadData import ModelImport
 from pzmm.writeJSONFiles import JSONFiles
-from pzmm.writeScoreCode import ScoreCode
 from pzmm.zipModel import ZipModel
