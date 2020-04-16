@@ -373,16 +373,9 @@ class JSONFiles():
                 dataPartitionExists.append(i)
                 
         for j in dataPartitionExists:
-            fitStats = {}
-            
-            if j==0:
-                fitStats['_DataRole_'] = 'VALIDATE'
-            elif j==1:
-                fitStats['_DataRole_'] = 'TRAIN'
-            elif j==2:
-                fitStats['_DataRole_'] = 'TEST'
-            fitStats.update({'_PartInd_': str(j),
-                            '_PartInd__f': f'           {j}'})
+            fitStats = nullJSONDict['data'][j]['dataMap']
+
+            fitStats['_PartInd_'] = j
             
             fpr, tpr, _ = metrics.roc_curve(data[j][0], data[j][1])
         
@@ -427,9 +420,7 @@ class JSONFiles():
             C = metrics.auc(fpr, tpr)
             fitStats['_C_'] = C
         
-            nullJSONDict['data'][j] = {'dataMap': fitStats,
-                                       'rowNumber': j,
-                                       'header': None}
+            nullJSONDict['data'][j]['dataMap'] = fitStats
 
         with open(os.path.join(jPath, 'dmcas_fitstat.json'), 'w') as jFile:
             json.dump(nullJSONDict, jFile, indent=4)            

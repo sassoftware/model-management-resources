@@ -1,13 +1,13 @@
-# Overview
-
-SAS Open Model Manager is a standalone version of SAS Model Manager that is meant for data analysts using open-source modeling languages such as Python and R. SAS Open Model Manager is a new tool to make it easy for open-source modelers to operationalize their models. In a single Web application you can manage your full model life cycle: development, testing, deployment, validation, and monitoring.
-The content on this GitHub repository is available for users of SAS Open Model Manager. It provides scripts and sample code that can make it easier to use SAS Open Model Manager. It also serves as a place where the open source community of users can share ideas, code, and models.
-
 # Open Model Manager Resources
 
 This repository contains the start-up script for SAS Open Model Manager, as well as helper scripts for administration and customization. In addition there are sample models and data, and examples of using Jupyter notebooks to submit API requests for common tasks. 
 
 For more information about deploying the container, see [SAS Open Model Manager 1.2 for Containers: Deployment Guide](http://documentation.sas.com/?docsetId=dplymdlmgmt0phy0dkr&docsetTarget=titlepage.htm&docsetVersion=1.2&locale=en).
+
+## Overview
+
+SAS Open Model Manager is a standalone version of SAS Model Manager that is meant for data analysts using open-source modeling languages such as Python and R. SAS Open Model Manager is a new tool to make it easy for open-source modelers to operationalize their models. In a single Web application you can manage your full model life cycle: development, testing, deployment, validation, and monitoring.
+The content on this GitHub repository is available for users of SAS Open Model Manager. It provides scripts and sample code that can make it easier to use SAS Open Model Manager. It also serves as a place where the open source community of users can share ideas, code, and models.
 
 ## Start Script
 The run_docker_container script in the [runOpenMM](runOpenMM/) directory launches SAS Open Model Manager.
