@@ -1,7 +1,7 @@
 # Overview
 
 This directory contains examples of Jupyter notebooks and Python code that can be used to perform the following SAS Open Model Manager tasks:
-* [Calculate fit statistics, ROC, and lift, and then generates JSON files for a Python model](#calculate-fit-statistics-roc-and-lift-and-then-generate-json-files)
+* [Calculate fit statistics, ROC, and lift, and then generate JSON files for a Python model](#calculate-fit-statistics-roc-and-lift-and-then-generate-json-files)
 * [Get the number of published models](#get-the-number-of-published-models)
 * [Build and import a trained Python model](#build-and-import-a-trained-python-model)
 * [Fit a scoring script for Python model containerization](#fit-a-scoring-script-for-python-model-containerization)
