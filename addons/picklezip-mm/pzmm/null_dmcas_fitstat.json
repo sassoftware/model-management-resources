@@ -163,48 +163,6 @@
       "_GINI_" : null,
       "_GAMMA_" : null,
       "_formattedPartition_" : "           0",
-      "_DataRole_" : "TRAIN",
-      "_MCE_" : null,
-      "_ASE_" : null,
-      "_MCLL_" : null,
-      "_KS_" : null,
-      "_KSPostCutoff_" : null,
-      "_DIV_" : null,
-      "_TAU_" : null,
-      "_KSCut_" : null,
-      "_C_" : null,
-      "_PartInd_" : "0"
-    },
-    "rowNumber" : 1,
-    "header" : null
-  }, {
-    "dataMap" : {
-      "_RASE_" : null,
-      "_NObs_" : null,
-      "_GINI_" : null,
-      "_GAMMA_" : null,
-      "_formattedPartition_" : "           1",
-      "_DataRole_" : "TEST",
-      "_MCE_" : null,
-      "_ASE_" : null,
-      "_MCLL_" : null,
-      "_KS_" : null,
-      "_KSPostCutoff_" : null,
-      "_DIV_" : null,
-      "_TAU_" : null,
-      "_KSCut_" : null,
-      "_C_" : null,
-      "_PartInd_" : "1"
-    },
-    "rowNumber" : 2,
-    "header" : null
-  }, {
-    "dataMap" : {
-      "_RASE_" : null,
-      "_NObs_" : null,
-      "_GINI_" : null,
-      "_GAMMA_" : null,
-      "_formattedPartition_" : "           2",
       "_DataRole_" : "VALIDATE",
       "_MCE_" : null,
       "_ASE_" : null,
@@ -215,7 +173,49 @@
       "_TAU_" : null,
       "_KSCut_" : null,
       "_C_" : null,
-      "_PartInd_" : "2"
+      "_PartInd_" : null
+    },
+    "rowNumber" : 1,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "_RASE_" : null,
+      "_NObs_" : null,
+      "_GINI_" : null,
+      "_GAMMA_" : null,
+      "_formattedPartition_" : "           1",
+      "_DataRole_" : "TRAIN",
+      "_MCE_" : null,
+      "_ASE_" : null,
+      "_MCLL_" : null,
+      "_KS_" : null,
+      "_KSPostCutoff_" : null,
+      "_DIV_" : null,
+      "_TAU_" : null,
+      "_KSCut_" : null,
+      "_C_" : null,
+      "_PartInd_" : null
+    },
+    "rowNumber" : 2,
+    "header" : null
+  }, {
+    "dataMap" : {
+      "_RASE_" : null,
+      "_NObs_" : null,
+      "_GINI_" : null,
+      "_GAMMA_" : null,
+      "_formattedPartition_" : "           2",
+      "_DataRole_" : "TEST",
+      "_MCE_" : null,
+      "_ASE_" : null,
+      "_MCLL_" : null,
+      "_KS_" : null,
+      "_KSPostCutoff_" : null,
+      "_DIV_" : null,
+      "_TAU_" : null,
+      "_KSCut_" : null,
+      "_C_" : null,
+      "_PartInd_" : null
     },
     "rowNumber" : 3,
     "header" : null
