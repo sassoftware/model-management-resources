@@ -49,11 +49,11 @@ pip uninstall picklezip-mm
 
 ## Getting Started
 
-The easiest way to get started with the picklezip-mm package is to follow the ImportPythonModel.ipynb notebook in the [examples](./examples) directory. Example data sets and an importable model ZIP file is included in the [samples](./samples/Python_Models/DTree_sklearn_PyPickleModel) directory.
+The easiest way to get started with the picklezip-mm package is to follow the ImportPythonModel.ipynb notebook in the [examples](/examples) directory. Example data sets and an importable model ZIP file is included in the [samples](/samples/Python_Models/DTree_sklearn_PyPickleModel) directory.
 
 
 ## License
 
-This project is licensed under the [Apache 2.0 License](../LICENSE).
+This project is licensed under the [Apache 2.0 License](/LICENSE).
 
 
