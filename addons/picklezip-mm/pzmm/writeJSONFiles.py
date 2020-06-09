@@ -102,8 +102,8 @@ class JSONFiles():
                                  numTargetCategories, eventProbVar=None,
                                  jPath=os.getcwd(), modeler=None):
         '''
-        Writes a model properties JSON file. The JSON file format is dictated by 
-        SAS Open Model Manager stipulations and only eventProbVar can be 'None'.
+        Writes a model properties JSON file. The JSON file format is required by the
+        Model Repository API service and only eventProbVar can be 'None'.
         
         Parameters
         ---------------
@@ -187,7 +187,7 @@ class JSONFiles():
         Parameters
         ---------------
         modelPrefix : string
-            Variable name for the model to be displayed in model manager 
+            The variable for the model name that is used when naming model files.
             (i.e. hmeqClassTree + [Score.py || .pickle]).
         jPath : string, optional
             Location for the output JSON file. The default value is the current
@@ -1019,7 +1019,7 @@ class JSONFiles():
         paramLabel : string
             Description of the parameter.
         paramOrder : int
-            Order to be displayed in model manager.
+            Order to be displayed in SAS Open Model Manager.
         paramValue : int, float, or str
             Value of the parameter.
                 

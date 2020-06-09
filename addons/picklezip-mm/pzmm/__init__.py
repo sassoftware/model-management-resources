@@ -10,3 +10,4 @@ from pzmm.pickleModel import PickleModel
 from pzmm.uploadData import ModelImport
 from pzmm.writeJSONFiles import JSONFiles
 from pzmm.zipModel import ZipModel
+from pzmm.writeScoreCode import ScoreCode
