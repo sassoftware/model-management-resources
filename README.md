@@ -25,12 +25,12 @@ The [addons](addons/) directory contains how-to information for the following ta
 * create container base images for Python 3 and R models using a Python script
 
 ## Demo Videos
-How-To Tutorial videos available on the [SAS video portal](https://video.sas.com/detail/videos/open-model-manager):
+How-To Tutorial videos available on the [SAS video portal](https://video.sas.com/detail/videos/sas-open-model-manager):
 
-* [Create a SAS Open Model Manager project and import a Python model](https://video.sas.com/detail/videos/open-model-manager/video/6160664893001/create-a-sas-open-model-manager-project-and-import-a-python-model)
-* [Importing R and PMML format models](https://video.sas.com/detail/videos/open-model-manager/video/6160666070001/importing-r-and-pmml-format-models)
-* [Scoring, publishing and comparing models](https://video.sas.com/detail/videos/open-model-manager/video/6160664319001/scoring-publishing-and-comparing-models)
-* [Performance reporting](https://video.sas.com/detail/videos/open-model-manager/video/6160664560001/performance-reporting )
+* [Create a SAS Open Model Manager project and import a Python model](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160664893001)
+* [Importing R and PMML format models](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160666070001)
+* [Scoring, publishing and comparing models](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160664319001)
+* [Performance reporting](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160664560001)
 
 ## Samples
 The [samples](samples/) directory contains sample data and models for Python and R programming language models.  
