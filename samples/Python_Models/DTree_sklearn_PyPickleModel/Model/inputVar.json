@@ -46,5 +46,11 @@
         "length": 8,
         "type": "decimal",
         "level": "interval"
+    },
+    {
+        "name": "YOJ",
+        "length": 8,
+        "type": "decimal",
+        "level": "interval"
     }
 ]

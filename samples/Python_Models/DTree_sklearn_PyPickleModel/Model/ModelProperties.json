@@ -1,6 +1,6 @@
 {
     "name": "Home Equity Loan Classification Tree",
-    "description": " : BAD = JOB + REASON + CLAGE + CLNO + DEBTINC + DELINQ + DEROG + NINQ",
+    "description": " : BAD = JOB + REASON + CLAGE + CLNO + DEBTINC + DELINQ + DEROG + NINQ + YOJ",
     "function": "classification",
     "scoreCodeType": "python",
     "trainTable": " ",
@@ -12,5 +12,5 @@
     "eventProbVar": "EM_EVENTPROBABILITY",
     "modeler": "sasdemo",
     "tool": "Python 3",
-    "toolVersion": "3.7.5"
+    "toolVersion": "3.8.3"
 }

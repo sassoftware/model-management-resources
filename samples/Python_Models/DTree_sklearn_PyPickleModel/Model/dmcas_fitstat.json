@@ -196,50 +196,6 @@
                 "_GINI_": null,
                 "_GAMMA_": null,
                 "_formattedPartition_": "           0",
-                "_DataRole_": "TRAIN",
-                "_MCE_": null,
-                "_ASE_": null,
-                "_MCLL_": null,
-                "_KS_": null,
-                "_KSPostCutoff_": null,
-                "_DIV_": null,
-                "_TAU_": null,
-                "_KSCut_": null,
-                "_C_": null,
-                "_PartInd_": "0"
-            },
-            "rowNumber": 1,
-            "header": null
-        },
-        {
-            "dataMap": {
-                "_DataRole_": "TRAIN",
-                "_PartInd_": "2",
-                "_PartInd__f": "           2",
-                "_RASE_": 0.2534482198820769,
-                "_NObs_": 3545,
-                "_GINI_": 0.5933005942929728,
-                "_GAMMA_": 0.8268055339614556,
-                "_MCE_": 0.07926657263751768,
-                "_ASE_": 0.0642360001613936,
-                "_MCLL_": 0.23940789515789684,
-                "_KS_": 0.4450600341756264,
-                "_KSPostCutoff_": null,
-                "_DIV_": 3545,
-                "_TAU_": 0.24349540711748122,
-                "_KSCut_": null,
-                "_C_": 0.7966502971464864
-            },
-            "rowNumber": 1,
-            "header": null
-        },
-        {
-            "dataMap": {
-                "_RASE_": null,
-                "_NObs_": null,
-                "_GINI_": null,
-                "_GAMMA_": null,
-                "_formattedPartition_": "           2",
                 "_DataRole_": "VALIDATE",
                 "_MCE_": null,
                 "_ASE_": null,
@@ -250,7 +206,51 @@
                 "_TAU_": null,
                 "_KSCut_": null,
                 "_C_": null,
-                "_PartInd_": "2"
+                "_PartInd_": null
+            },
+            "rowNumber": 1,
+            "header": null
+        },
+        {
+            "dataMap": {
+                "_RASE_": 0.2534482198820769,
+                "_NObs_": 3545,
+                "_GINI_": 0.5933005942929728,
+                "_GAMMA_": 0.8268055339614556,
+                "_formattedPartition_": "           1",
+                "_DataRole_": "TRAIN",
+                "_MCE_": 0.07926657263751768,
+                "_ASE_": 0.0642360001613936,
+                "_MCLL_": 0.23940789515789684,
+                "_KS_": 0.4450600341756264,
+                "_KSPostCutoff_": null,
+                "_DIV_": 3545,
+                "_TAU_": 0.24349540711748122,
+                "_KSCut_": null,
+                "_C_": 0.7966502971464864,
+                "_PartInd_": 1
+            },
+            "rowNumber": 2,
+            "header": null
+        },
+        {
+            "dataMap": {
+                "_RASE_": null,
+                "_NObs_": null,
+                "_GINI_": null,
+                "_GAMMA_": null,
+                "_formattedPartition_": "           2",
+                "_DataRole_": "TEST",
+                "_MCE_": null,
+                "_ASE_": null,
+                "_MCLL_": null,
+                "_KS_": null,
+                "_KSPostCutoff_": null,
+                "_DIV_": null,
+                "_TAU_": null,
+                "_KSCut_": null,
+                "_C_": null,
+                "_PartInd_": null
             },
             "rowNumber": 3,
             "header": null
