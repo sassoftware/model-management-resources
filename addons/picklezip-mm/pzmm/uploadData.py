@@ -67,8 +67,8 @@ def getAccessToken(server, username=None, password=None):
     
     loginAttempts = 0
     while (notAuthenticated and loginAttempts < 5): 
-        username = input('Enter user name:')
-        password = getpass.getpass('Enter password for %s:' % username)
+        username = input('Enter a user name:')
+        password = getpass.getpass('Enter the password for %s:' % username)
         authBody = ('grant_type=password&username=' + username +
                     '&password=' + password)
         authReturn = requests.post(server + authURI,
@@ -96,7 +96,7 @@ class ModelImport():
     
     def __init__(self, host):
         '''
-        Initializes the  ModelImport class with host location, user name, and password.
+        Initializes the ModelImport class with the host location, user name, and password.
         
         Parameters
         ---------------
@@ -111,9 +111,9 @@ class ModelImport():
             
     def findProjectID(self, projectName, authToken):
         '''
-        Given a project name, makes an API request to the Model Repository API to find the
-        project ID. If project ID is not found, creates a new project and returns
-        its project ID.
+        Given a project name, an API request is sent to the Model Repository API to find the
+        project ID. If the project ID is not found, it creates a new project and returns
+        the project ID for the new project.
         
         Parameters
         ---------------

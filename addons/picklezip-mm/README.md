@@ -1,4 +1,5 @@
-# pickleZip-mm (pzMM) v1.0
+# picklezip-mm (pzmm) v1.0 - Obsolete
+_**Note:** The pzmm package has been merged with the [sasctl](https://github.com/sassoftware/python-sasctl) package, and is now the [pzmm module](https://github.com/sassoftware/python-sasctl/tree/master/src/sasctl/pzmm)._
 
 ## Overview
 
@@ -7,7 +8,7 @@ The goal of this package is to provide users with a straight forward method to i
 * Writes `.JSON` files needed for SAS Open Model Manager to read in the model information, which includes the following files:
   * fileMetadata.json specifies the file roles for the names of the input and output variables files, the Python score code file, and the Python pickle file
   * ModelProperties.json is used to set the model properties that are read by SAS Open Model Manager during the import process
-  * inputVar.json and outputVar.json are used to set the input and output variables to be used by OMM
+  * inputVar.json and outputVar.json are used to set the input and output variables for the model
   * dmcas_fitstat.json is an optional file that provides the fit statistics that are associated with the imported model, which are either user-generated or data-generated
   * dmcas_lift.json and dmcas_roc.json are optional files that provide the lift and ROC plots that are associated with the imported model, which are data-generated
 * Writes the *score.py file that is used for model scoring

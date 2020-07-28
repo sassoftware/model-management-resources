@@ -12,14 +12,14 @@ class PickleModel():
     
     def pickleTrainedModel(trainedModel, modelPrefix, pPath=Path.cwd()):
         '''
-        Write trained model to a binary pickle file. 
+        Writes the trained model to a binary pickle file.
         
         Parameters
         ---------------
         trainedModel
             User-defined trained model.
         modelPrefix : string
-            Variable name for the model to be displayed in SAS Open Model Manager 
+            The variable name for the model to be displayed in SAS Open Model Manager or SAS Model Manager
             (i.e. hmeqClassTree + [Score.py || .pickle]).
         pPath : string, optional
             File location for the output pickle file. Default is the current
@@ -28,7 +28,7 @@ class PickleModel():
 		Yields
 		---------------
 		'*.pickle'
-			Binary pickle file containing a trained model.
+			The binary pickle file that contains the trained model.
         '''
         
         with open(pPath / (modelPrefix + '.pickle'), 'wb') as pFile:
