@@ -2,15 +2,15 @@
 
 This directory contains the instructions to perform the following tasks in the SAS Open Model Manager container:
 
-* install extra Python packages into the Open Model Manager container
+* install extra Python packages into the SAS Open Model Manager container
 * change PyMAS configuration in the container
 * turn on logging debug for a specific service using sas-admin CLI utility
 * create container base images for Python 3 and R models with a Python script
-* create Amazon Web Services (AWS) and Private Docker publishing destinations with a Python script
+* create a CAS, Amazon Web Services (AWS), or Private Docker publishing destination using a Python script
 * administer user group identities
 * generate and zip Python pickle model files
 
-## Extra Python packages
+## Extra Python Packages
 When a container instance is running, Python 3 has been installed using the sas user. A user can also install extra Python packages, if needed.
 
 Log in to the container instance as the sas user:
