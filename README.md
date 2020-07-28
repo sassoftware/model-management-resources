@@ -1,5 +1,5 @@
 # Model Management Resources for Open-Source Models
-This repository contains resources that can be used for administration and customizations that help with managing open-source models. In addition, there are sample models and data, and examples of using Jupyter notebooks to submit API requests for common tasks for managing models using SAS Model Manager or SAS Open Model Manager.
+This repository contains resources that can be used for administration and customizations that help with managing open-source models. In addition, there are sample models and data, and example Jupyter notebooks that can be used to submit API requests for common model management tasks using SAS Model Manager or SAS Open Model Manager.
 
 ## Overview
 SAS Open Model Manager is a standalone version of SAS Model Manager that is meant for data analysts using open-source modeling languages such as Python and R. SAS Open Model Manager is a new tool to make it easy for open-source modelers to operationalize their models. In a single Web application you can manage your full model life cycle: development, testing, deployment, validation, and monitoring.
@@ -23,14 +23,14 @@ How-To Tutorial videos available on the [SAS video portal](https://video.sas.com
 * [Scoring, publishing and comparing models](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160664319001)
 * [Performance reporting](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160664560001)
 
-For how-to tutorial videos about using the PZMM Python package or module to register a Python model, see [PZMM Module Demos](https://github.com/sassoftware/python-sasctl/blob/master/src/sasctl/pzmm/README.md#demos) in the sasctl GitHub Repository. 
+For how-to tutorial videos about using the pzmm Python package or sasctl.pzmm module to register a Python model, see the [pzmm demos](https://github.com/sassoftware/python-sasctl/blob/master/src/sasctl/pzmm/README.md#demos) in the python-sasctl GitHub Repository. 
 
 ## Examples
 
 * Jupyter notebooks and Python code examples that you can use to perform model management tasks are available in the [examples](examples/) directory.
 * Sample data and models for Python and R programming language models are available in the [samples](samples/) directory.
 
-For additional examples that demonstrate how to use the sasctl PZMM module to import Python models, see the [examples](https://github.com/sassoftware/python-sasctl/tree/master/examples) directory in the sasctl GitHub repository.
+For additional examples that demonstrate how to use the pzmm module of the sasctl package to import Python models, see the [examples](https://github.com/sassoftware/python-sasctl/tree/master/examples) directory in the python-sasctl GitHub repository.
 
 ## SAS Model Manager CLIs
 

@@ -1,5 +1,5 @@
 # picklezip-mm (pzmm) v1.0 - Obsolete
-_**Note:** The pzmm package has been merged with the [python-sasctl](https://github.com/sassoftware/python-sasctl) package, and is now the [PZMM module](https://github.com/sassoftware/python-sasctl/tree/master/src/sasctl/pzmm)._
+_**Note:** The pzmm package has been merged with the [sasctl](https://github.com/sassoftware/python-sasctl) package, and is now the [pzmm module](https://github.com/sassoftware/python-sasctl/tree/master/src/sasctl/pzmm)._
 
 ## Overview
 
