@@ -1,6 +1,8 @@
 # Copyright (c) 2020, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 
+import sys
+sys.path.append('../..')
 import mmAuthorization
 import requests
 import json, os, pprint
