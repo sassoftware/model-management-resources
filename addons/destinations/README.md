@@ -1,13 +1,13 @@
 # Configuring Publishing Destinations
 
-This directory contains examples of Jupyter notebooks that you can use to create container publishing destinations for Amazon Web Services (AWS), Azure, CAS, and Private Docker. 
+This directory contains examples of Jupyter notebooks that you can use to create publishing destinations for CAS, Git, and container destinations such as Amazon Web Services (AWS), Azure, CAS, and Private Docker. 
 The [viya35](./viya35) directory contains the examples for configuration publishing destinations for SAS Model Manager 15.3 on SAS Viya 3.5 and SAS Open Model Manager 1.2.
 
-You can use the example Jupyter notebooks or Python scripts to create new publishing destinations for the following destination types: CAS, Amazon Web Services (AWS), Azure and Private Docker.
+You can use the example Jupyter notebooks or Python scripts to create new publishing destinations for the following destination types: CAS, Amazon Web Services (AWS), Azure, Git, and Private Docker.
 
-_**Note:** Creating a publishing destination for Azure is supported only for SAS Viya 4._
+_**Note:** Creating publishing destinations for Azure and Git is supported only for SAS Viya 2020.1 and later._
 
-## SAS Viya 4
+## SAS Viya 2020.1 and Later
 
 
 ### Prerequisites
@@ -27,6 +27,7 @@ For more information, see [Configuring Publishing Destinations](http://documenta
 
   * [CreateAWSDestination.ipynb](./CreateAWSDestination.ipynb)
   * [CreateAzureDestination.ipynb](./CreateAzureDestination.ipynb)
+  * [CreateGitDestination.ipynb](./CreateGitDestination.ipynb)
   * [CreatePrivateDockerDestination.ipynb](./CreatePrivateDockerDestination.ipynb)
   * [create_cas_destination.py](./create_cas_destination.py)
 

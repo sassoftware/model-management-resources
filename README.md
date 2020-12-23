@@ -34,7 +34,19 @@ For additional examples that demonstrate how to use the pzmm module of the sasct
 
 ## SAS Model Manager CLIs
 
-Here are the CLIs that are available for use with SAS Model Manager and SAS Open Model Manager:
+Here are the CLIs that are available for use with SAS Model Manager on SAS Viya 2020.1 and later:
+
+* SAS Viya Models CLI - enables you to perform the following tasks:
+
+  * Register, organize, and manage models within a common model repository. 
+  * Retrieve a list of publishing destinations and published models
+  * Retrieve information about a publishing destination or published model.
+  
+
+The SAS Viya Models CLI can be downloaded from the [SAS Viya CLI Downloads](https://support.sas.com/downloads/package.htm?pid=2512) page on the SAS Support website.
+
+
+Here are the CLIs that are available for use with SAS Model Manager 15.3 on SAS Viya 3.5 and SAS Open Model Manager 1.2:
 
 * SAS Model Repository CLI - enables you to register, organize, and manage models within a common model repository.
 * SAS Model Publish CLI - enables you to retrieve a list of publishing destinations and published objects (such as models), as well as information about a destination or published model.
