@@ -24,7 +24,8 @@ For more information, see [Configuring Publishing Destinations](http://documenta
 * Make sure that you modify the host URL (host_name and port), SAS account, Domain name, or private Docker information in the examples before you run them.
 
 * Run the Jupyter notebook or Python script for a specific destination type to create a publishing destination:
-
+  
+  * [CreateAMLDestination.ipynb](./CreateAMLDestination.ipynb)
   * [CreateAWSDestination.ipynb](./CreateAWSDestination.ipynb)
   * [CreateAzureDestination.ipynb](./CreateAzureDestination.ipynb)
   * [CreateGitDestination.ipynb](./CreateGitDestination.ipynb)
