@@ -1,0 +1,42 @@
+[
+  {
+    "role": "trainResource",
+    "name": "dmcas_fitstat.json"
+  },
+  {
+    "role": "trainResource",
+    "name": "dmcas_lift.json"
+  },
+  {
+    "role": "trainResource",
+    "name": "dmcas_roc.json"
+  },
+  {
+    "role": "scoreResource",
+    "name": "fleet_classtree_r.rds"
+  },
+  {
+    "role": "scoreResource",
+    "name": "fleet_classtree_r_score.r"
+  },
+  {
+    "role": "train",
+    "name": "fleet_classtree_train.r"
+  },
+  {
+    "role": "inputVariables",
+    "name": "inputVar.json"
+  },
+  {
+    "role": "outputVariables",
+    "name": "outputVar.json"
+  },
+  {
+    "role": "score",
+    "name": "DS2EP_PythonWrapper.sas"
+  },
+  {
+    "role": "scoreResource",
+    "name": "rPy2Wrapper.py"
+  }
+]

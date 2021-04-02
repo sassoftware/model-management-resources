@@ -1,0 +1,252 @@
+{
+  "name": "dmcas_roc",
+  "revision": 0,
+  "order": 0,
+  "parameterMap": {
+    "_DataRole_": {
+      "parameter": "_DataRole_",
+      "type": "char",
+      "label": "Data Role",
+      "length": 10,
+      "order": 1,
+      "values": ["_DataRole_"],
+      "preformatted": false
+    },
+    "_PartInd_": {
+      "parameter": "_PartInd_",
+      "type": "num",
+      "label": "Partition Indicator",
+      "length": 8,
+      "order": 2,
+      "values": ["_PartInd_"],
+      "preformatted": false
+    },
+    "_PartInd__f": {
+      "parameter": "_PartInd__f",
+      "type": "char",
+      "label": "Formatted Partition",
+      "length": 12,
+      "order": 3,
+      "values": ["_PartInd__f"],
+      "preformatted": false
+    },
+    "_Column_": {
+      "parameter": "_Column_",
+      "type": "char",
+      "label": "Analysis Variable",
+      "length": 32,
+      "order": 4,
+      "values": ["_Column_"],
+      "preformatted": false
+    },
+    "_Event_": {
+      "parameter": "_Event_",
+      "type": "char",
+      "label": "Event",
+      "length": 1,
+      "order": 5,
+      "values": ["_Event_"],
+      "preformatted": false
+    },
+    "_Cutoff_": {
+      "parameter": "_Cutoff_",
+      "type": "num",
+      "label": "Cutoff",
+      "length": 8,
+      "order": 6,
+      "values": ["_Cutoff_"],
+      "preformatted": false
+    },
+    "_Sensitivity_": {
+      "parameter": "_Sensitivity_",
+      "type": "num",
+      "label": "Sensitivity",
+      "length": 8,
+      "order": 7,
+      "values": ["_Sensitivity_"],
+      "preformatted": false
+    },
+    "_Specificity_": {
+      "parameter": "_Specificity_",
+      "type": "num",
+      "label": "Specificity",
+      "length": 8,
+      "order": 8,
+      "values": ["_Specificity_"],
+      "preformatted": false
+    },
+    "_FPR_": {
+      "parameter": "_FPR_",
+      "type": "num",
+      "label": "False Positive Rate",
+      "length": 8,
+      "order": 9,
+      "values": ["_FPR_"],
+      "preformatted": false
+    },
+    "_OneMinusSpecificity_": {
+      "parameter": "_OneMinusSpecificity_",
+      "type": "num",
+      "label": "1 - Specificity",
+      "length": 8,
+      "order": 10,
+      "values": ["_OneMinusSpecificity_"],
+      "preformatted": false
+    }
+  },
+  "data": [
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": "Inf",
+          "_Sensitivity_": 0,
+          "_Specificity_": 1,
+          "_FPR_": 0,
+          "_OneMinusSpecificity_": 0
+        },
+        "rowNumber": 1
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0.67153284671533,
+          "_Sensitivity_": 0.1991341991342,
+          "_Specificity_": 0.97050147492625,
+          "_FPR_": 0.029498525073746,
+          "_OneMinusSpecificity_": 0.029498525073746
+        },
+        "rowNumber": 2
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0.58805031446541,
+          "_Sensitivity_": 0.6038961038961,
+          "_Specificity_": 0.88462799082268,
+          "_FPR_": 0.11537200917732,
+          "_OneMinusSpecificity_": 0.11537200917732
+        },
+        "rowNumber": 3
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0.45714285714286,
+          "_Sensitivity_": 0.65584415584416,
+          "_Specificity_": 0.86594559160931,
+          "_FPR_": 0.13405440839069,
+          "_OneMinusSpecificity_": 0.13405440839069
+        },
+        "rowNumber": 4
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0.38709677419355,
+          "_Sensitivity_": 0.69480519480519,
+          "_Specificity_": 0.84726319239594,
+          "_FPR_": 0.15273680760406,
+          "_OneMinusSpecificity_": 0.15273680760406
+        },
+        "rowNumber": 5
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0.34782608695652,
+          "_Sensitivity_": 0.72077922077922,
+          "_Specificity_": 0.83251392985906,
+          "_FPR_": 0.16748607014094,
+          "_OneMinusSpecificity_": 0.16748607014094
+        },
+        "rowNumber": 6
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0.18918918918919,
+          "_Sensitivity_": 0.72835497835498,
+          "_Specificity_": 0.82268108816781,
+          "_FPR_": 0.17731891183219,
+          "_OneMinusSpecificity_": 0.17731891183219
+        },
+        "rowNumber": 7
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0.11660447761194,
+          "_Sensitivity_": 0.99891774891775,
+          "_Specificity_": 0.20190101606031,
+          "_FPR_": 0.79809898393969,
+          "_OneMinusSpecificity_": 0.79809898393969
+        },
+        "rowNumber": 8
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0.11111111111111,
+          "_Sensitivity_": 1,
+          "_Specificity_": 0.19927892494264,
+          "_FPR_": 0.80072107505736,
+          "_OneMinusSpecificity_": 0.80072107505736
+        },
+        "rowNumber": 9
+      },
+      {
+        "dataMap": {
+          "_DataRole_": "TRAIN",
+          "_PartInd_": 1,
+          "_PartInd__f": "           1",
+          "_Column_": "Maintenance_flag",
+          "_Event_": 1,
+          "_Cutoff_": 0,
+          "_Sensitivity_": 1,
+          "_Specificity_": 0,
+          "_FPR_": 1,
+          "_OneMinusSpecificity_": 1
+        },
+        "rowNumber": 10
+      }
+    ],
+  "version": 1,
+  "xInteger": false,
+  "yInteger": false
+}

@@ -8,6 +8,7 @@ This directory contains examples of Jupyter notebooks and Python code that can b
 * [Fit a scoring script for R model containerization](#fit-a-scoring-script-for-r-model-containerization)
 * [Upload data to SAS Cloud Analytics Services (CAS)](#upload-data-to-the-sas-cloud-analytics-services-cas)
 * [Delete model content logs](#delete-model-content-logs)
+* [Score open-source models with CAS in SAS Viya 3.5](#score-open-source-models-with-cas-in-sas-viya-35)
 
 ## Calculate Fit Statistics, ROC, and Lift, and then Generate JSON Files
 
@@ -69,6 +70,12 @@ The model content is only deleted for the following file types: ScoreCodeGen{}.s
 To delete model content logs, see [DeleteModelContentLogs.ipynb](./DeleteModelContentLogs.ipynb) in the examples directory.
 
 This project is licensed under the [Apache 2.0 License](../LICENSE).
+
+## Score Open-Source Models with CAS in SAS Viya 3.5
+SAS Model Manager in SAS Viya 3.5 provides the ability to score Python and R models within CAS. For Python models, the user must modify their Python model files. 
+However, for R models, a user must modify their model files and verify details about the SAS Viya server.
+
+To score open-source models within CAS, see [ScoringOpenSourceModelsWithCAS.md](./ScoringOpenSourceModelsWithCAS.md) in the examples directory.
 
 ## Additional Resources
 * [SAS Open Model Manager: Help Center documentation](https://documentation.sas.com/?cdcId=openmmcdc&cdcVersion=1.2&docsetId=openmmug&docsetTarget=titlepage.htm&locale=en)
