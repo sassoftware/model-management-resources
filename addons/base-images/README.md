@@ -1,5 +1,9 @@
 # Creating Base Images
 
+_**Note:** You only need to create base images using these Python scripts for SAS Model Manager on SAS Viya 2020.1 - 2021.1.2, SAS Model Manager 15.3 on SAS Viya 3.5, and SAS Open Model Manager 1.2. 
+As of the SAS Viya 2021.1.3 stable release of SAS Model Manager, the model base images are automatically created when publishing open-source models to container destinations. 
+For more information, see [Container Base Images for Scoring Models](https://documentation.sas.com/doc/en/mdlmgrcdc/v_009/mdlmgrag/n0x0rvwqs9lvpun16sfdqoff4tsk.htm#p0hmbi6svov1lun1wx6ibq8a6u98) in SAS Model Manager: Administrator's Guide._
+
 Here are the types of model base images that are currently supported:
 
 * Python 3 base image that is used for scoring Python 3 models.
