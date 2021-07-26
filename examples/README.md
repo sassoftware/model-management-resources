@@ -81,4 +81,4 @@ To score open-source models within CAS, see [ScoringOpenSourceModelsWithCAS.md](
 * [SAS Open Model Manager: Help Center documentation](https://documentation.sas.com/?cdcId=openmmcdc&cdcVersion=1.2&docsetId=openmmug&docsetTarget=titlepage.htm&locale=en)
 
 
-
+This project is licensed under the [Apache 2.0 License](../LICENSE).
