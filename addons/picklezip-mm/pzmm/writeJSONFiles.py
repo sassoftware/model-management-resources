@@ -51,7 +51,7 @@ class JSONFiles():
             firstRow = predict.loc[predict.first_valid_index()]
             dType = predict.dtypes.name
             dKind = predict.dtypes.kind
-            isNum = pd.api.types.is_numeric_dtype(firstRow)
+            isNum = pd.api.types.is_numeric_dtype(predict)
             isStr = pd.api.types.is_string_dtype(predict)
             
             # in debug mode, print each variables descriptor
