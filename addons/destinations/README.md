@@ -28,6 +28,7 @@ For more information, see [Configuring Publishing Destinations](http://documenta
   * [CreateAMLDestination.ipynb](./CreateAMLDestination.ipynb)
   * [CreateAWSDestination.ipynb](./CreateAWSDestination.ipynb)
   * [CreateAzureDestination.ipynb](./CreateAzureDestination.ipynb)
+  * [CreateGCPDestination.ipynb](./CreateGCPDestination.ipynb)
   * [CreateGitDestination.ipynb](./CreateGitDestination.ipynb)
   * [CreatePrivateDockerDestination.ipynb](./CreatePrivateDockerDestination.ipynb)
   * [create_cas_destination.py](./create_cas_destination.py)
