@@ -47,7 +47,7 @@ Here are the prerequisites for creating a new publishing destination for SAS Viy
    sudo pip3 install requests
   ```
 
-- If your destination type is AWS, you must create a credential domain in SAS Credentials service and store the AWS access key information in the credentials. Please modify the host URL (viya_host and port), SAS account, and AWS access key information in the script, and then enter the domain name in the create_aws_destination.py file.
+* If your destination type is AWS, you must create a credential domain in SAS Credentials service and store the AWS access key information in the credentials. Please modify the host URL (viya_host and port), SAS account, and AWS access key information in the script, and then enter the domain name in the create_aws_destination.py file.
 
   ```
    python create_aws_credential_domain.py
