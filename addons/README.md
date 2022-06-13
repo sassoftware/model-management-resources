@@ -1,13 +1,14 @@
 # Overview of Addons
 This directory contains the instructions to perform the following tasks in the SAS Open Model Manager or SAS Model Manager container:
 
-* install extra Python packages into the SAS Open Model Manager container
-* change PyMAS configuration in the container
-* turn on logging debug for a specific service using sas-admin CLI utility
-* create container base images for Python 3 and R models with a Python script
-* create a CAS, Amazon Web Services (AWS), Azure, or Private Docker publishing destination using a Python script or Jupyter notebook
-* administer user group identities
-* generate and zip Python pickle model files
+* [install extra Python packages into the SAS Open Model Manager container](#install-extra-python-packages-for-sas-open-model-manager-container)
+* [change PyMAS configuration in the container](#pymas-configuration)
+* [turn on logging debug for a specific service using sas-admin CLI utility](#turn-on-logging-to-debug-with-the-sas-viya-administration-cli)
+* [create container base images for Python 3 and R models with a Python script](./base-images/README.md)
+* [create a CAS, Git, Azure Machine Learning, or container publishing destination using a Python script or Jupyter notebook](./destinations/README.md) 
+* [migrate SAS Viya 3.5 Python models to SAS Viya 2020.1 or later](#migrate-sas-viya-35-python-models-to-sas-viya-20201-or-later)
+* [administer user group identities](#administer-user-group-identities)
+* [generate and zip Python pickle model files](#generate-and-zip-python-pickle-model-files)
 
 ## Install Extra Python Packages for SAS Open Model Manager Container
 When a container instance is running, Python 3 has been installed using the sas user. A user can also install extra Python packages, if needed.
@@ -52,7 +53,7 @@ Here is an example of configuring the PyMAS package for SAS Viya 3.5:
    export MAS_PYPATH
    ```
 
-## Turn on Logging to Debug with the SAS Viya Administration CLI
+## Turn On Logging to Debug with the SAS Viya Administration CLI
 Occasionally a user might like to get more debugging information from a log file when troubleshooting certain situations. 
 The SAS Viya Administration (sas-admin) command-line interface (CLI) can be used to easily set the logging level for specific SAS services in the CLI.
 Users can download the sas-admin CLI from the [SAS Support Downloads site](https://support.sas.com/downloads/package.htm?pid=2133).
@@ -93,6 +94,10 @@ You must create a publishing destination and base image before users can publish
 * [Creating publishing destinations](./destinations/README.md)
 * [Creating base images](./base-images/README.md)
 
+## Migrate SAS Viya 3.5 Python Models to SAS Viya 2020.1 or Later
+You can migrate one Python model at a time from SAS Viya 3.5 to SAS Viya 2020.1 or later.
+
+For more information, see the [README](./migration/README.md) in the migration directory.
 
 ## Administer User Group Identities
 The [UserGroupAdmin.ipynb](UserGroupAdmin.ipynb) Jupyter notebook includes examples for how to administer user group identities by submitting API requests using Python code.
