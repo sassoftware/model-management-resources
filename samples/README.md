@@ -29,6 +29,9 @@ is an example of a simplified workflow for sending KPI alerts via email when mon
 
 The [KPI](./KPI) section of the samples directory contains sample scripts for how to use DATA step and CASL code to create custom KPIs for use with SAS Model Manager.
 
+## Container Tools
+The [Container Tools](./Container_Tools) section of the samples directory contains tools to help perform tasks that take place outside of SAS Viya, such as the promotion of a container across environments. 
+
 ## Additional Resources
 
 * [SAS Model Manager: Help Center documentation](http://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=default)
