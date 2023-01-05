@@ -1,7 +1,7 @@
 # Overview
 
 This directory contains sample data and models for the Python and R programming languages. You can use these samples to perform various tasks
-with SAS Open Model Manager and SAS Model Manager. To begin using the sample data and models, retrieve the files in the manner that you prefer and place all of the files in the same directory location.
+with SAS Model Manager. To begin using the sample data and models, retrieve the files in the manner that you prefer and place all of the files in the same directory location.
 
 This directory also contains sample workflow templates and sample code for creating custom KPI data.
 
@@ -35,7 +35,6 @@ The [Container Tools](./Container_Tools) section of the samples directory contai
 ## Additional Resources
 
 * [SAS Model Manager: Help Center documentation](http://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=default)
-* [SAS Open Model Manager: Help Center documentation](https://documentation.sas.com/?cdcId=openmmcdc&cdcVersion=1.2&docsetId=openmmug&docsetTarget=titlepage.htm&locale=en)
 * [SAS Workflow Manager: Help Center documentation](http://documentation.sas.com/?cdcId=wfscdc&cdcVersion=default)
 
 This project is licensed under the [Apache 2.0 License](../LICENSE).

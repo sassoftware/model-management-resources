@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 import sys
-sys.path.append('..')
+sys.path.append('../../addons')
 import mmAuthorization
 import requests
 import json, os, pprint

@@ -1,6 +1,6 @@
 # Overview
 
-This directory contains examples of Jupyter notebooks and Python code that can be used to perform the following SAS Open Model Manager tasks:
+This directory contains examples of Jupyter notebooks and Python code that can be used to perform the following SAS Model Manager tasks:
 * [Calculate fit statistics, ROC, and lift, and then generate JSON files for a Python model](#calculate-fit-statistics-roc-and-lift-and-then-generate-json-files)
 * [Get the number of published models](#get-the-number-of-published-models)
 * [Build and import a trained Python model](#build-and-import-a-trained-python-model)
@@ -15,7 +15,7 @@ This directory contains examples of Jupyter notebooks and Python code that can b
 When you compare models, the model comparison output includes model properties, user-defined properties, and variables. The model comparison output
 might also include fit statistics, and lift and ROC plots for the models if the required model files are available. The fit statistics, as well as
 plots for lift and ROC, can be produced using Python packages that generate JSON files. These JSON files are used to show the fit statistics
-and plots when comparing models in SAS Open Model Manager.
+and plots when comparing models in SAS Model Manager.
 
 To calculate fit statistics, see [ CalculateFitStatisticsROCLift.ipynb](./CalculateFitStatisticsROCLift.ipynb) in the examples directory.
 
@@ -28,7 +28,7 @@ To return a count for published models, see [GetPublishedModelsCount.ipynb](./Ge
 
 ## Build and Import a Trained Python Model
 
-A Python model can be built and trained before importing the model in SAS Open Model Manager as a ZIP file. The ZIP file contains model files that are associated
+A Python model can be built and trained before importing the model in SAS Model Manager as a ZIP file. The ZIP file contains model files that are associated
 with a specific model and stored within the ZIP file. The ZIP file can contain model folders at the same level or in a hierarchical folder structure.
 Each model folder within the ZIP file is imported as a separate model object that contains the contents of the model folder.
 When you import models from a ZIP file into a project version, the hierarchical folder structure is ignored.
@@ -76,7 +76,7 @@ However, for R models, a user must modify their model files and verify details a
 To score open-source models within CAS, see [ScoringOpenSourceModelsWithCAS.md](./ScoringOpenSourceModelsWithCAS.md) in the examples directory.
 
 ## Additional Resources
-* [SAS Open Model Manager: Help Center documentation](https://documentation.sas.com/?cdcId=openmmcdc&cdcVersion=1.2&docsetId=openmmug&docsetTarget=titlepage.htm&locale=en)
+* [SAS Model Manager: Help Center documentation](https://documentation.sas.com/doc/en/mdlmgrcdc/default/mdlmgrwlcm/home.htm)
 
 
 This project is licensed under the [Apache 2.0 License](../LICENSE).

@@ -10,7 +10,7 @@ The Web services in the container first start searching for the scoring script t
 
 The fileMetadata.json file is created by the Model Repository API when the model is downloaded from the common model repository. 
 
-You can use the SAS Model Manager or SAS Open Model Manager web application to set the file role for the scoring script to "Score code". This can be done by selecting the scoring script file on the **Files** tab of a model object and editing the file properties. For more information, see [Assign Model File Roles](https://documentation.sas.com/?cdcId=openmmcdc&cdcVersion=1.2&docsetId=openmmug&docsetTarget=n026ttfq4xcn5an19dpfo4jcyuqz.htm&locale=en#n1k0tfrt0d1dqtn1gvw5huqz7gpb) in the _SAS Open Model Manager 1.2: User's Guide_.
+You can use the SAS Model Manager web application to set the file role for the scoring script to "Score code". This can be done by selecting the scoring script file on the **Files** tab of a model object and editing the file properties. For more information, see [Assign Model File Roles](https://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=default&docsetId=mdlmgrug&docsetTarget=n026ttfq4xcn5an19dpfo4jcyuqz.htm#n1k0tfrt0d1dqtn1gvw5huqz7gpb) in the _SAS Model Manager: User's Guide_.
 
 If, the file role for the scoring script is not set as "Score code", the Web services searches for the first script whose file name ends with 'score.py' for a Python model.
     
@@ -38,7 +38,7 @@ In the next section there is a Python scoring script sample with the pattern.
 If you have a scoring script ready in a Jupyter notebook, please download the script as a .py file first. 
 In your Python script, you can copy most of the following sample script and modify the **run** function to fit your requirements. 
 
-If you export the model ZIP file from the common model repository, the ZIP file might include the  inputVar.json and outputVar.json files. In the scoring script, you use the configuration that you have done in the SAS Model Manager or SAS Open Model Manager web application.
+If you export the model ZIP file from the common model repository, the ZIP file might include the  inputVar.json and outputVar.json files. In the scoring script, you use the configuration that you have done in the SAS Model Manager web application.
 
 ```
 # If the pickle file has not specified in command-line arguments, the script

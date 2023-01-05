@@ -10,7 +10,7 @@ The Web services in the container first start searching for the scoring script t
 
 The fileMetadata.json file is created by the Model Repository API when the model is downloaded from the common model repository. 
 
-You can use the SAS Model Manager or SAS Open Model Manager web application to set the file role for the scoring script to "Score code". This can be done by selecting the scoring script file on the **Files** tab of a model object and editing the file properties. For more information, see [Assign Model File Roles](https://documentation.sas.com/?cdcId=openmmcdc&cdcVersion=1.2&docsetId=openmmug&docsetTarget=n026ttfq4xcn5an19dpfo4jcyuqz.htm&locale=en#n1k0tfrt0d1dqtn1gvw5huqz7gpb) in the _SAS Open Model Manager 1.2: User's Guide_.
+You can use the SAS Model Manager web application to set the file role for the scoring script to "Score code". This can be done by selecting the scoring script file on the **Files** tab of a model object and editing the file properties. For more information, see [Assign Model File Roles](https://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=v_028&docsetId=mdlmgrug&docsetTarget=n026ttfq4xcn5an19dpfo4jcyuqz.htm#n1k0tfrt0d1dqtn1gvw5huqz7gpb) in the _SAS Model Manager: User's Guide_.
 
 If, the file role for the scoring script is not set as "Score code", the Web services searches for the first script whose file name ends with 'score.R' for an R model.
     
