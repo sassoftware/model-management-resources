@@ -1,9 +1,10 @@
 # Model Management Resources for Open-Source Models
-This repository contains resources that can be used for administration and customizations that help with managing open-source models. In addition, there are sample models and data, and example Jupyter notebooks that can be used to submit API requests for common model management tasks using SAS Model Manager or SAS Open Model Manager.
+This repository contains resources that can be used for administration and customizations that help with managing open-source models. In addition, there are sample models and data, and example Jupyter notebooks that can be used to submit API requests for common model management tasks using SAS Model Manager.
 
 ## Overview
-SAS Open Model Manager is a standalone version of SAS Model Manager that is meant for data analysts using open-source modeling languages such as Python and R. SAS Open Model Manager is a new tool to make it easy for open-source modelers to operationalize their models. In a single Web application you can manage your full model life cycle: development, testing, deployment, validation, and monitoring.
-The content on this GitHub repository is available for users of SAS Open Model Manager and SAS Model Manager on SAS Viya. It provides scripts and sample code that can make it easier to perform model management tasks. It also serves as a place where the open source community of users can share ideas, code, and models.
+The content on this GitHub repository is available for users of SAS Model Manager on SAS Viya. It provides scripts and sample code that can make it easier to perform model management tasks and manage your full model life cycle: development, testing, deployment, validation, and monitoring. 
+It is meant for data analysts using open-source modeling languages such as Python and R to make it easy for open-source modelers to operationalize their models. 
+This repository also serves as a place where the open source community of users can share ideas, code, and models.
 
 _**Note:** Some capabilities that are used in the scripts and sample code are not supported by SAS Model Manager 15.3 or earlier versions._
 
@@ -12,18 +13,14 @@ For more information about model management, see the following resources:
 * [Demo videos](#demo-videos)
 * [Examples](#examples)
 * [SAS Model Manager documentation](https://support.sas.com/en/software/model-manager-support.html#documentation)
-* [SAS Open Model Manager documentation](https://support.sas.com/en/software/model-manager-support.html#documentation)
 * [SAS Model Manager command-line interfaces (CLIs)](#sas-model-manager-clis)
 
 ## Demo Videos
-How-To Tutorial videos available on the [SAS video portal](https://video.sas.com/detail/videos/sas-open-model-manager):
 
-* [Create a SAS Open Model Manager project and import a Python model](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160664893001)
-* [Importing R and PMML format models](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160666070001)
-* [Scoring, publishing and comparing models](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160664319001)
-* [Performance reporting](http://players.brightcove.net/1872491364001/default_default/index.html?videoId=6160664560001)
+* [SAS Model Manager - ModelOps demo](https://www.sas.com/en_us/software/model-manager.html#demo)
+* How-To Tutorial videos are available on the [SAS video portal](https://video.sas.com/?q=SAS%20Model%20Manager)
 
-For how-to tutorial videos about using the pzmm Python package or sasctl.pzmm module to register a Python model, see the [pzmm demos](https://github.com/sassoftware/python-sasctl/blob/master/src/sasctl/pzmm/README.md#demos) in the python-sasctl GitHub Repository. 
+_Note:_ For how-to tutorial videos about using the pzmm Python package or sasctl.pzmm module to register a Python model, see the [pzmm demos](https://github.com/sassoftware/python-sasctl/blob/master/src/sasctl/pzmm/README.md#demos) in the python-sasctl GitHub Repository. 
 
 ## Examples
 
@@ -41,25 +38,21 @@ Here are the CLIs that are available for use with SAS Model Manager on SAS Viya 
   * Register, organize, and manage models within a common model repository. 
   * Retrieve a list of publishing destinations and published models
   * Retrieve information about a publishing destination or published model.
+  * Create, update, and delete publishing destinations. _(SAS Viya 2022.1.2 and later)_
   
 
 The SAS Viya Models CLI can be downloaded from the [SAS Viya CLI Downloads](https://support.sas.com/downloads/package.htm?pid=2512) page on the SAS Support website.
 
 
-Here are the CLIs that are available for use with SAS Model Manager 15.3 on SAS Viya 3.5 and SAS Open Model Manager 1.2:
+Here are the CLIs that are available for use with SAS Model Manager 15.3 or later on SAS Viya 3.5:
 
 * SAS Model Repository CLI - enables you to register, organize, and manage models within a common model repository.
 * SAS Model Publish CLI - enables you to retrieve a list of publishing destinations and published objects (such as models), as well as information about a destination or published model.
 
 The CLIs can be downloaded from the [SAS Model Manager Downloads](https://support.sas.com/downloads/browse.htm?fil=&cat=557) page on the SAS Support website.
 
-## Startup Script for SAS Open Model Manager
-The run_docker_container script in the [runOpenMM](runOpenMM/) directory launches the SAS Open Model Manager container.
-
-For information about deploying the container, see [SAS Open Model Manager 1.2 for Containers: Deployment Guide](http://documentation.sas.com/?docsetId=dplymdlmgmt0phy0dkr&docsetTarget=titlepage.htm&docsetVersion=1.2&locale=en).
-
-## Addons
-The [addons](addons/) directory contains how-to information for administration and customization tasks.
+## Configuration
+The [configuration](configuration/) directory contains how-to information for administration and customization tasks.
 
 ## Contributing
 We welcome your contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit contributions to this project.
