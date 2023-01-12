@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,11 +7,10 @@
 
     <script>
         window.onload = function () {
-            const destination = window.location.href;
-            if (window.location.href.includes("model-management-resources/blob/main/addons/destinations/CreateGitDestination.ipynb")) {
+            if (window.location.href.includes("model-management-resources/blob/main/addons/destinations")) {
                 const redirectLocation = window.location.href.replace(
-                    "model-management-resources/blob/main/addons/destinations/CreateGitDestination.ipynb",
-                    "model-management-resources/blob/main/configuration"
+                    "addons/destinations",
+                    "configuration/destinations"
                 );
                 document.getElementById("body").innerHTML = "The addons content has moved to the configuration directory.<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
