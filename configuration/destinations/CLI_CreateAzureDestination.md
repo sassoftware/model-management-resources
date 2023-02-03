@@ -16,10 +16,13 @@ For more information about the models plug-in CLI commands and options, see [SAS
 
 Here are some examples of using the models plug-in to the SAS Viya CLI to create an Azure publishing destination.
 
+_**Note:** For the following CLI examples, you will be prompted to enter a client ID and secret after the command is submitted._
+
 ## Example 1: Create an Azure Destination
 
 ```commandline
-sas-viya models destination create --type azure --name AzureDemo --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
+sas-viya models destination create --type azure --name AzureDemo 
+--identityId SASAdministrators --identityType group --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
 --tenantId b1c14d5c-3625-45b3-a430-9552373a0c2f --subscriptionId 224f27e0-745f-452c-a442-70e79d24ce7f 
 --resourceGroupName modelManager --kubernetesCluster azureAKS  --region eastus --credDomainID domainAzure 
 --validationNamespace default
@@ -29,7 +32,8 @@ sas-viya models destination create --type azure --name AzureDemo --baseRepoURL c
 OR
 
 ```commandline
-sas-viya models destination createAzure --name AzureDemo --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
+sas-viya models destination createAzure --name AzureDemo 
+--identityId SASAdministrators --identityType group --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
 --tenantId b1c14d5c-3625-45b3-a430-9552373a0c2f --subscriptionId 224f27e0-745f-452c-a442-70e79d24ce7f 
 --resourceGroupName modelManager --kubernetesCluster azureAKS  --region eastus --credDomainID domainAzure 
 --validationNamespace default
@@ -38,18 +42,22 @@ sas-viya models destination createAzure --name AzureDemo --baseRepoURL cefeed571
 ## Example 2: Create an Azure Destination with Git Support
 
 ```commandline
-sas-viya models destination createAzure --name AzureDemo --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
+sas-viya models destination createAzure --name AzureDemo 
+--identityId SASAdministrators --identityType group --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
 --tenantId b1c14d5c-3625-45b3-a430-9552373a0c2f --subscriptionId 224f27e0-745f-452c-a442-70e79d24ce7f 
 --resourceGroupName modelManager --kubernetesCluster azureAKS  --region eastus --credDomainID domainAzure 
---validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com
+--validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com 
+--gitUserId sasdemo --gitAccessToken 'D4bPHJvByqSFnxGBrQ73'
 ```
 
 ## Example 3: Create an Azure Destination with Git and Database Support
 
 ```commandline
-sas-viya models destination createAzure --name AzureDemo --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
+sas-viya models destination createAzure --name AzureDemo 
+--identityId SASAdministrators --identityType group --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
 --tenantId b1c14d5c-3625-45b3-a430-9552373a0c2f --subscriptionId 224f27e0-745f-452c-a442-70e79d24ce7f 
 --resourceGroupName modelManager --kubernetesCluster azureAKS  --region eastus --credDomainID domainAzure 
 --validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com 
+--gitUserId sasdemo --gitAccessToken 'D4bPHJvByqSFnxGBrQ73' 
 --dbSecret oracle-secret-decision --dbConfigMap oracle-config
 ```

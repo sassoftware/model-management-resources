@@ -4,7 +4,7 @@ This directory contains SAS Viya CLI examples that you can use to create publish
 The [viya35](../../configuration/destinations/viya35) subdirectory contains the examples for configuration publishing destinations for SAS Model Manager 15.3 or later on SAS Viya 3.5.
 
 In SAS Viya, a command-line interface (CLI) is a user interface to the SAS Viya REST API services. In this interface, you enter commands on a command line and receive a response from the system. 
-You can use a CLI to interact directly with SAS Viya programmatically without a GUI. For information about the CLIs that are provided with SAS Viya, see [Command-Line Interface: Overview](https://documentation.sas.com/doc/en/sasadmincdc/default/calcli/n01xwtcatlinzrn1gztsglukb34a.htm).
+You can use a CLI to interact directly with SAS Viya programmatically without a GUI. For information about the CLIs that are provided with SAS Viya, see [Command-Line Interface: Overview](https://documentation.sas.com/?cdcId=sasadmincdc&cdcVersion=default&docsetId=calcli&docsetTarget=n01xwtcatlinzrn1gztsglukb34a.htm).
 
 The models plug-in to the SAS Viya CLI can be used to create, update, and delete publishing destinations for use with SAS Viya 2022.1.2 and later.
 
