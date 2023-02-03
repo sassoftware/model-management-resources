@@ -16,28 +16,32 @@ For more information about the models plug-in CLI commands and options, see [SAS
 
 Here are some examples of using the models plug-in to the SAS Viya CLI to create a Google Cloud Platform publishing destination.
 
+_**Note:** For the following CLI examples, you will be prompted to enter a service account and credential in JSON format after the command is submitted._
+
 ## Example 1: Create a Google Cloud Platform Destination
 
 ```commandline
-sas-viya models destination create --type gcp --name GCPDemo --baseRepoURL "gcr.io/solorgasub7" 
+sas-viya models destination create --type gcp --name GCPDemo 
+--identityId SASAdministrators --identityType group --baseRepoURL "gcr.io/solorgasub7" 
 --kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b --credDomainID domainGCP 
 --validationNamespace default
- 
 ```
 
 OR
 
 ```commandline
-sas-viya models destination createGCP --name GCPDemo --baseRepoURL "gcr.io/myserviceaccount" 
+sas-viya models destination createGCP --name GCPDemo 
+--identityId SASAdministrators --identityType group --baseRepoURL "gcr.io/myserviceaccount" 
 --kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b --credDomainID domainGCP 
 --validationNamespace default
- 
 ```
 
 ## Example 2: Create a Google Cloud Platform Destination with Git Support
 
 ```commandline
-sas-viya models destination createGCP --name GCPDemo --baseRepoURL gcr.io/myserviceaccount 
+sas-viya models destination createGCP --name GCPDemo 
+--identityId SASAdministrators --identityType group --baseRepoURL gcr.io/myserviceaccount 
+--kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b 
 --serviceAccount myserviceaccount@gserviceaccount.com --credDomainID domainGCP 
 --validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com
  

@@ -16,34 +16,41 @@ For more information about the models plug-in CLI commands and options, see [SAS
 
 Here are some examples of using the models plug-in to the SAS Viya CLI to create an Amazon Web Services publishing destination.
 
+_**Note:** For the following CLI examples, you will be prompted to enter an access key ID and secret access key after the command is submitted._
+
 ## Example 1: Create an Amazon Web Services Destination
 
 ```commandline
-sas-viya models destination create --type aws --name AWSDemo --kubernetesCluster mm-docker-models-eks 
+sas-viya models destination create --type aws --name AWSDemo 
+--identityId SASAdministrators --identityType group --kubernetesCluster mm-docker-models-eks 
 --region us-east-1 --credDomainID domainAWS --validationNamespace default
 ```
 
 OR
 
 ```commandline
-sas-viya models destination createAWS --name AWSDemo --kubernetesCluster mm-docker-models-eks 
+sas-viya models destination createAWS --name AWSDemo 
+--identityId SASAdministrators --identityType group --kubernetesCluster mm-docker-models-eks 
 --region us-east-1 --credDomainID domainAWS --validationNamespace default
 ```
 
 ## Example 2: Create an Amazon Web Services Destination with Git Support
 
 ```commandline
-sas-viya models destination createAWS --name AWSDemo --kubernetesCluster mm-docker-models-eks 
+sas-viya models destination createAWS --name AWSDemo 
+--identityId SASAdministrators --identityType group --kubernetesCluster mm-docker-models-eks 
 --region us-east-1 --credDomainID domainAWS --validationNamespace default 
---remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com
- 
+--remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com 
+--gitUserId sasdemo --gitAccessToken 'D4bPHJvByqSFnxGBrQ73'
 ```
 
 ## Example 3: Create an Amazon Web Services Destination with Git and Database Support
 
 ```commandline
-sas-viya models destination createAWS --name AWSDemo --kubernetesCluster mm-docker-models-eks 
+sas-viya models destination createAWS --name AWSDemo 
+--identityId SASAdministrators --identityType group --kubernetesCluster mm-docker-models-eks 
 --region us-east-1 --credDomainID domainAWS --validationNamespace default 
---remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --userEmail --userEmail myemail@server.com 
+--remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --userEmail myemail@server.com 
+--gitUserId sasdemo --gitAccessToken 'D4bPHJvByqSFnxGBrQ73' 
 --dbSecret oracle-secret-decision --dbConfigMap oracle-config
 ```

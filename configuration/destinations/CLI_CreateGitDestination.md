@@ -19,7 +19,8 @@ Here are some examples of using the models plug-in to the SAS Viya CLI to create
 ## Example 1: Create a Git Destination
 
 ```commandline
-sas-viya models destination create --type git --name GitDemo --credDomainID myGitDomain --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git 
+sas-viya models destination create --type git --name GitDemo --credDomainID myGitDomain 
+--identityId SASAdministrators --identityType group --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git 
 --userEmail myemail@server.com --localRepoLocation /mmprojectpublic --userName mmdemo --gitBranch main 
 --codeGenerationMode cas --deploymentGitFolder /deploymentTest
 ```
@@ -27,7 +28,8 @@ sas-viya models destination create --type git --name GitDemo --credDomainID myGi
 OR
 
 ```commandline
-sas-viya models destination createGit --name GitDemo --credDomainID myGitDomain --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git 
+sas-viya models destination createGit --name GitDemo --credDomainID myGitDomain 
+--identityId SASAdministrators --identityType group --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git 
 --userEmail myemail@server.com --localRepoLocation /mmprojectpublic --userName mmdemo --gitBranch main 
 --codeGenerationMode cas --deploymentGitFolder /deploymentTest
 ```
