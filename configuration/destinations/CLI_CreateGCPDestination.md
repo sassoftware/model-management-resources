@@ -44,15 +44,17 @@ sas-viya models destination createGCP --name GCPDemo
 --kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b 
 --serviceAccount myserviceaccount@gserviceaccount.com --credDomainID domainGCP 
 --validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com
- 
+--gitUserId sasdemo --gitAccessToken 'D4bPHJvByqSFnxGBrQ73'
 ```
 
-## Example 3: Create an Azure Destination with Git and Database Support
+## Example 3: Create a Google Cloud Platform Destination with Git and Database Support
 
 ```commandline
-sas-viya models destination createGCP --name GCPDemo --baseRepoURL gcr.io/myserviceaccount 
+sas-viya models destination createGCP --name GCPDemo 
+--identityId SASAdministrators --identityType group --baseRepoURL gcr.io/myserviceaccount 
+--kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b 
 --serviceAccount myserviceaccount@gserviceaccount.com --credDomainID domainGCP 
 --validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com
- --dbSecret oracle-secret-decision --dbConfigMap oracle-config
-
+--gitUserId sasdemo --gitAccessToken 'D4bPHJvByqSFnxGBrQ73' 
+--dbSecret oracle-secret-decision --dbConfigMap oracle-config
 ```
