@@ -244,7 +244,7 @@ flux bootstrap github --context=production-admin --owner=${GITHUB_USER} --reposi
 ```
 
 ### SAS Viya Environment Manager and SAS Studio
-1. From [SAS Environment Manager, import](https://go.documentation.sas.com/doc/en/sasadmincdc/v_027/calpromotion/n0djzpossyj6rrn1vvi1wfvp2qhp.htm) the [RunTestingPushPipeline job file](./resources/RunTestingPushPipeline.json) and the [RunProductionPushPipeline job file](./resources/RunProductionPushPipeline.json). 
+1. From [SAS Environment Manager, import](https://documentation.sas.com/?cdcId=sasadmincdc&cdcVersion=default&docsetId=calpromotion&docsetTarget=n0djzpossyj6rrn1vvi1wfvp2qhp.htm) the [RunTestingPushPipeline job file](./resources/RunTestingPushPipeline.json) and the [RunProductionPushPipeline job file](./resources/RunProductionPushPipeline.json). 
 2. Open both job files in SAS Studio. Add your Jenkins username, key, and URL into both the jobs, where specified. 
 
 ![Import Files into Environment Manager](./images/ImportNewFiles.PNG)
@@ -252,7 +252,7 @@ flux bootstrap github --context=production-admin --owner=${GITHUB_USER} --reposi
 
 ### SAS Viya Command Line Interface
 If using SAS Viya 2022.1.2 or later, you can use the CLI to define the publishing destination. 
-1. The SAS Viya command-line interface (CLI) enables you to interact directly with the SAS Viya REST services. You enter commands on a command line and receive responses from the system. You can use the CLI to work with SAS Viya programmatically, as an alternative to using a graphical user interface (GUI). If this is the first time your organization has used the Command Line Interface (CLI) , [you must download the CLI and configure SAS Viya to run the CLI](https://go.documentation.sas.com/doc/en/sasadmincdc/v_031/calcli/n1e2dehluji7jon1gk69yggc6i28.htm). 
+1. The SAS Viya command-line interface (CLI) enables you to interact directly with the SAS Viya REST services. You enter commands on a command line and receive responses from the system. You can use the CLI to work with SAS Viya programmatically, as an alternative to using a graphical user interface (GUI). If this is the first time your organization has used the Command Line Interface (CLI) , [you must download the CLI and configure SAS Viya to run the CLI](https://documentation.sas.com/?cdcId=sasadmincdc&cdcVersion=default&docsetId=calcli&docsetTarget=n1e2dehluji7jon1gk69yggc6i28.htm). 
 2. Sign in to SAS Viya via the CLI using the following code:
 ```bash
 sas-viya auth login
@@ -290,15 +290,15 @@ sas-viya models destination createAzure \
 ### SAS Workflow Manager
 <b>Note:</b> To deploy a decision, you can skip the configuration steps for SAS Workflow Manager. You will need to manually deploy the decision instead.
 
-1.	If this is the first time your organization has used SAS Workflow Manager, you will need to [configure the default workflow administrator group](https://go.documentation.sas.com/doc/en/wfscdc/v_016/wfsag/n1hgjqwqj65u94n182f8zxah2m8w.htm) and add your user to that group as well as [configure the default service account](https://go.documentation.sas.com/doc/en/wfscdc/v_016/wfsag/p1j1q517695r6cn17osi5y1xa6vq.htm).
+1.	If this is the first time your organization has used SAS Workflow Manager, you will need to [configure the default workflow administrator group](https://documentation.sas.com/?cdcId=wfscdc&cdcVersion=default&docsetId=wfsag&docsetTarget=n1hgjqwqj65u94n182f8zxah2m8w.htm) and add your user to that group as well as [configure the default service account](https://documentation.sas.com/?cdcId=wfscdc&cdcVersion=default&docsetId=wfsag&docsetTarget=p1j1q517695r6cn17osi5y1xa6vq.htm).
 
 ![Configure Default Service Account](./images/ComfigureDefaultServiceAccount.PNG)
 
 ![Configure Workflow Admin Group](./images/ConfigureDefaultWorkflowAdminGroup.PNG)
 
-2.	Once SAS Workflow Manager has been configured and your user has the appropriate permissions, [you will need to download the provided Workflow definition](./resources/GitOps.bpmn), [import the definition into SAS Workflow Manager](https://go.documentation.sas.com/doc/en/wfscdc/v_016/wfsug/n02kjtks2mgn8pn11vmvrd3noban.htm). 
+2.	Once SAS Workflow Manager has been configured and your user has the appropriate permissions, [you will need to download the provided Workflow definition](./resources/GitOps.bpmn), [import the definition into SAS Workflow Manager](https://documentation.sas.com/?cdcId=wfscdc&cdcVersion=default&docsetId=wfsug&docsetTarget=n02kjtks2mgn8pn11vmvrd3noban.htm). 
 3.	Review the workflow template and adjust as needed, such as changing the wait time on the timer or adding additional manual approvals.
-4.	Finally, [activate the workflow definition](https://go.documentation.sas.com/doc/en/wfscdc/v_016/wfsug/n0edxyuotldxg9n1bcrzw5hj4fyq.htm). 
+4.	Finally, [activate the workflow definition](https://documentation.sas.com/?cdcId=wfscdc&cdcVersion=default&docsetId=wfsug&docsetTarget=n0edxyuotldxg9n1bcrzw5hj4fyq.htm). 
 
 ![Import and Activate Workflow](./images/ImportActivateWorkflow.PNG)
 
