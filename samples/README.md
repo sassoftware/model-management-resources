@@ -5,6 +5,8 @@ with SAS Model Manager. To begin using the sample data and models, retrieve the 
 
 This directory also contains sample workflow templates and sample code for creating custom KPI data.
 
+_Note: Contributions from users other than the SAS Model Manager support team can be added to the external-samples subdirectories. For example, external Python model samples can be placed in the [/Python_Models/external-samples](./Python_Models/external-samples/README.md) subdirectory._
+
 ## Python Models
 
 The following sample data and models are available in the [Python Models](./Python_Models) section of the samples directory:
