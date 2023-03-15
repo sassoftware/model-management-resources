@@ -10,7 +10,8 @@ This directory contains examples of Jupyter notebooks, Python code, and R code t
   - [Upload Data to the SAS Cloud Analytics Services (CAS)](#upload-data-to-the-sas-cloud-analytics-services-cas)
   - [Delete Model Content Logs](#delete-model-content-logs)
   - [Score Open-Source Models with CAS in SAS Viya 3.5](#score-open-source-models-with-cas-in-sas-viya-35)
-  - [Python Container Runtime Scoring](#python-container-runtime-scoring)
+  - [Score Python containers at runtime](#python-container-runtime-scoring)
+  - [Create container images in an OpenShift environment](#create-container-images-in-an-openshift-environment)
   - [Additional Resources](#additional-resources)
 
 _Note: Contributions from users other than the SAS Model Manager support team can be added to the [/Python/external-examples](./Python/external-examples/README.md) and [/R/external-examples](R/external-examples/README.md) subdirectories._
@@ -82,6 +83,13 @@ To score open-source models within CAS, see [ScoringOpenSourceModelsWithCAS.md](
 
 ## Python Container Runtime Scoring
 SAS Model Manager can deploy Python models into a Python container. To score data using a Python container deployment, see [PythonContainerRuntimeScoring.ipynb](Python/PythonContainerRuntimeScoring.ipynb) in the examples directory.
+
+## Create Container Images in an OpenShift Environment
+SAS Viya platform uses Kaniko to create container images for models and decisions when they are published to a container publishing destination. 
+Because Kaniko requires root access to run, container images cannot be created when the SAS Viya platform is deployed in a Red Hat OpenShift environment. 
+In order to create container images within an OpenShift environment you must instead publish your models and decisions to a Git destination and then use Docker to create the container images.
+
+To create container images in an OpenShift Environment, see [OpenShiftContainerImages.md](./OpenShiftContainerImages.md)
 
 ## Additional Resources
 * [SAS Model Manager: Help Center documentation](https://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=default&docsetId=mdlmgrwlcm&docsetTarget=home.htm)
