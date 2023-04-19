@@ -37,7 +37,7 @@ sas-viya models destination createGit --name GitDemo --credDomainID myGitDomain
 ## Example 2: Create a Git Destination with Credentials
 
 ```commandline
-sas-viya models destination createGit --name GitDemo --gitUserId sasdemo --gitAccessToken 'D4bPHJvByqSFnxGBrQ73' 
+sas-viya models destination createGit --name GitDemo --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
 --identityId SASAdministrators --identityType group --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git
 --userEmail myemail@server.com --localRepoLocation /mmprojectpublic --userName mmdemo --gitBranch main 
 --codeGenerationMode cas --deploymentGitFolder /deploymentTest
