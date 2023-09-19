@@ -46,7 +46,7 @@ sas-viya models destination createAzure --name AzureDemo
 --identityId SASAdministrators --identityType group --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
 --tenantId b1c14d5c-3625-45b3-a430-9552373a0c2f --subscriptionId 224f27e0-745f-452c-a442-70e79d24ce7f 
 --resourceGroupName modelManager --kubernetesCluster azureAKS  --region eastus --credDomainID domainAzure 
---validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com 
+--validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com 
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73
 ```
 
@@ -57,7 +57,7 @@ sas-viya models destination createAzure --name AzureDemo
 --identityId SASAdministrators --identityType group --baseRepoURL cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io 
 --tenantId b1c14d5c-3625-45b3-a430-9552373a0c2f --subscriptionId 224f27e0-745f-452c-a442-70e79d24ce7f 
 --resourceGroupName modelManager --kubernetesCluster azureAKS  --region eastus --credDomainID domainAzure 
---validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com 
+--validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com 
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
 --dbSecret oracle-secret-decision --dbConfigMap oracle-config
 ```

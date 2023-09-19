@@ -43,7 +43,7 @@ sas-viya models destination createGCP --name GCPDemo
 --identityId SASAdministrators --identityType group --baseRepoURL gcr.io/myserviceaccount 
 --kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b 
 --serviceAccount myserviceaccount@gserviceaccount.com --credDomainID domainGCP 
---validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com
+--validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73
 ```
 
@@ -54,7 +54,7 @@ sas-viya models destination createGCP --name GCPDemo
 --identityId SASAdministrators --identityType group --baseRepoURL gcr.io/myserviceaccount 
 --kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b 
 --serviceAccount myserviceaccount@gserviceaccount.com --credDomainID domainGCP 
---validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com
+--validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
 --dbSecret oracle-secret-decision --dbConfigMap oracle-config
 ```
