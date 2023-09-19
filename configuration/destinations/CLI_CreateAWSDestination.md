@@ -40,7 +40,7 @@ sas-viya models destination createAWS --name AWSDemo
 sas-viya models destination createAWS --name AWSDemo 
 --identityId SASAdministrators --identityType group --kubernetesCluster mm-docker-models-eks 
 --region us-east-1 --credDomainID domainAWS --validationNamespace default 
---remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --userEmail myemail@server.com 
+--remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com 
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73
 ```
 
@@ -50,7 +50,7 @@ sas-viya models destination createAWS --name AWSDemo
 sas-viya models destination createAWS --name AWSDemo 
 --identityId SASAdministrators --identityType group --kubernetesCluster mm-docker-models-eks 
 --region us-east-1 --credDomainID domainAWS --validationNamespace default 
---remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --userEmail myemail@server.com 
+--remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --gitUserEmail myemail@server.com 
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
 --dbSecret oracle-secret-decision --dbConfigMap oracle-config
 ```

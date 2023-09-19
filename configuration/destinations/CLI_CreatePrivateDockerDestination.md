@@ -42,7 +42,7 @@ sas-viya models destination createPD --name MyPrivateDocker --description "Priva
 sas-viya models destination createPD --name MyPrivateDocker 
 --identityId SASAdministrators --identityType group --baseRepoURL registry.myserver.com/mmrepo
 --kubeURL https://k8s-master.modelmanager.myserver.com:6443 --credDomainID pdOracleDomain 
---remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --userEmail myemail@server.com 
+--remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --gitUserEmail myemail@server.com 
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
 ```
 
@@ -52,7 +52,7 @@ sas-viya models destination createPD --name MyPrivateDocker
 sas-viya models destination createPD --name MyPrivateDocker 
 --identityId SASAdministrators --identityType group --baseRepoURL registry.myserver.com/mmrepo
 --kubeURL https://k8s-master.modelmanager.myserver.com:6443 --credDomainID pdOracleDomain 
---remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --userEmail myemail@server.com 
+--remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --gitUserEmail myemail@server.com 
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
 --dbSecret oracle-secret-decision --dbConfigMap oracle-config
 ```
