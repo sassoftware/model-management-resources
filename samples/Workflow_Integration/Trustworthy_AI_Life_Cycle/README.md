@@ -26,6 +26,7 @@ Follow these steps to install the Trustworthy AI Life Cycle workflow:
    _**Note:** A new workflow version must be created before the workflow can be activated. Make sure the version is not set to "Current"._
 
 6. Activate the new version of the definition. 
+
    _**Note:** Only administrators can activate the workflow definition._
 
 For more information, see [Import and Activate a Workflow Definition](https://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=default&docsetId=mdlmgrqs&docsetTarget=p19zkxhqe0bvten1f1j1j7h6f7e4.htm#n1dk8lz6tczsunn17mluyiyvabsx) 
