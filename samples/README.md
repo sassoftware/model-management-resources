@@ -24,8 +24,8 @@ The following sample data and models are available in the [R Models](./R_Models)
 
 ## Workflow Integration
 
-The sample workflow definition (BPMN) file in the [Workflow_Integration](./Workflow_Integration) section of the samples directory 
-is an example of a simplified workflow for sending KPI alerts via email when monitoring performance of models.
+The [Workflow_Integration](./Workflow_Integration) section of the samples directory contains example workflows 
+that can be used in conjunction with SAS Model Manager and SAS Workflow Manager.
 
 ## Custom KPIs
 
