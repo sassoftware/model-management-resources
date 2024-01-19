@@ -23,8 +23,7 @@ might also include fit statistics, and lift and ROC plots for the models if the 
 plots for lift and ROC, can be produced using Python packages that generate JSON files. These JSON files are used to show the fit statistics
 and plots when comparing models in SAS Model Manager.
 
-To calculate fit statistics, see [CalculateFitStatisticsROCLift.ipynb](Python/CalculateFitStatisticsROCLift.ipynb) in the examples directory.
-
+To calculate fit statistics, ROC, and lift information when you build and import a trained Python model, see [ImportPythonModel.ipynb](Python/ImportPythonModel.ipynb) in the examples directory.
 
 ## Get the Number of Published Models
 
