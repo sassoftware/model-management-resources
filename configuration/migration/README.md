@@ -2,7 +2,7 @@
 
 This directory contains scripts or notebooks used to convert Python model assets from the SAS Viya 3.5 format to the SAS Viya 2020.1 or later format. The modelMigration.py script can be used with one unzipped model at a time.
 
-**Note:** *Python models migrating via the [restore script](https://pubshelpcenter.unx.sas.com/test/doc/en/mdlmgrcdc/v_020/mdlmgrag/p0n2f2djoollgqn13isibmb98qd2.htm#p171e1x1xjqhpen1i9le09m3bi7e) or by manual export and import from SAS Viya 3.5 to SAS Viya 2020.1 or later will not score or validate successfully without modification.*
+**Note:** *Python models migrating via the [Model Repository service restore process](https://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=default&docsetId=mdlmgrag&docsetTarget=p0n2f2djoollgqn13isibmb98qd2.htm#p171e1x1xjqhpen1i9le09m3bi7e) or by manual export and import from SAS Viya 3.5 to SAS Viya 2020.1 or later will not score or validate successfully without modification.*
 
 ## modelMigration.py
 

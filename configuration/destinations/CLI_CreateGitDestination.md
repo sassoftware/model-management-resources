@@ -39,6 +39,6 @@ sas-viya models destination createGit --name GitDemo --credDomainID myGitDomain
 ```commandline
 sas-viya models destination createGit --name GitDemo --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
 --identityId SASAdministrators --identityType group --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git
---userEmail myemail@server.com --localRepoLocation /mmprojectpublic --userName mmdemo --gitBranch main 
+--gitUserEmail myemail@server.com --localRepoLocation /mmprojectpublic --gitUserId mmdemo --gitBranch main 
 --codeGenerationMode cas --deploymentGitFolder /deploymentTest
 ```
