@@ -327,7 +327,7 @@
                 <extensionElements>
                     <flowable:field name="url">
                         <flowable:expression>
-                            <![CDATA[http://exploredemotest.unx.sas.com/${publishedModelName}/__env]]>
+                            <![CDATA[http://myserver.com/${publishedModelName}/__env]]>
                         </flowable:expression>
                     </flowable:field>
                     <flowable:field name="method">
