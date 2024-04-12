@@ -34,6 +34,10 @@ The [KPI](./KPI) section of the samples directory contains sample scripts for ho
 ## Container Tools
 The [Container Tools](./Container_Tools) section of the samples directory contains tools to help perform tasks that take place outside of SAS Viya, such as the promotion of a container across environments. 
 
+## ONNX Runtime in SAS Viya 4
+A simple Kubernetes service can be defined to allow for the use of ONNX runtime in SAS Viya 4, without requiring changes to the entire Python overlay used by other services in SAS Viya 4. 
+This sample walks through the creation of the container, web application, service, and models that can be scored within SAS Model Manager.
+
 ## Additional Resources
 
 * [SAS Model Manager: Help Center documentation](http://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=default)

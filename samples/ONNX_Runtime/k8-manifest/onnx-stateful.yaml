@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: onnx-statefulset
+  namespace: default # The chosen namespace must match the location of the model asset persistent volume claim
+spec:
+  serviceName: onnx-service # Match the name given in onnx-service.yaml
+  podManagementPolicy: Parallel # Parallel processing for incoming requests
+  replicas: 3 # Replica count is based on expected or available resources
+  selector:
+    matchLabels:
+      app: onnx
+  template:
+    metadata:
+      labels:
+        app: onnx
+    spec:
+      volumes:
+        - name: astores-volume
+          persistentVolumeClaim:
+            claimName: sas-microanalytic-score-astores # This PVC should be set up by an administrator of the SAS Viya server
+      containers:
+      - name: onnx
+        image: <CONTAINER_IMAGE_LOCATION> # Make sure that SAS Viya has access to the registry that holds the onnx app container
+        ports:
+        - containerPort: 8080 # Match this value with the port chosen in the onnx_app.py file
+        volumeMounts:
+          - name: astores-volume
+            mountPath: /models/resources/viya # This matches the expected nomenclature of the file directory of the model assets
+            subPath: resources

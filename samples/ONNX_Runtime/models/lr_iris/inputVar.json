@@ -1,0 +1,26 @@
+[
+    {
+        "name": "SEPALLENGTH",
+        "level": "interval",
+        "type": "decimal",
+        "length": 8
+    },
+    {
+        "name": "SEPALWIDTH",
+        "level": "interval",
+        "type": "decimal",
+        "length": 8
+    },
+    {
+        "name": "PETALLENGTH",
+        "level": "interval",
+        "type": "decimal",
+        "length": 8
+    },
+    {
+        "name": "PETALWIDTH",
+        "level": "interval",
+        "type": "decimal",
+        "length": 8
+    }
+]

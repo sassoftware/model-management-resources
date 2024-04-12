@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: default # The chosen namespace must match the location of the model asset persistent volume claim
+  name: onnx-service # Keep in mind that adjustments to the name change the service DNS
+spec:
+  selector:
+    app: onnx
+  ports:
+  - protocol: TCP
+    port: 8080 # Match this value with the port chosen in the onnx_app.py file

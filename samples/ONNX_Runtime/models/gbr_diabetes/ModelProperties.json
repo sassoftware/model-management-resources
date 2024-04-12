@@ -1,0 +1,17 @@
+{
+    "name": "gbr_diabetes",
+    "description": "",
+    "scoreCodeType": "python",
+    "trainTable": "",
+    "trainCodeType": "Python",
+    "algorithm": "",
+    "function": "Prediction",
+    "targetVariable": "target",
+    "targetEvent": "",
+    "targetLevel": "Interval",
+    "eventProbVar": "",
+    "modeler": "",
+    "tool": "Python 3",
+    "toolVersion": "3.10.13",
+    "properties": []
+}
