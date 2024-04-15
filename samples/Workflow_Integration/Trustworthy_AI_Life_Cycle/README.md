@@ -5,7 +5,7 @@ and explainability evaluation, performance monitoring, and the appropriate data 
 [SAS&#174; Model Manager](http://documentation.sas.com/?cdcId=mdlmgrcdc&cdcVersion=default) capabilities and 
 the [_NIST AI Risk Management Framework_](https://www.nist.gov/itl/ai-risk-management-framework) as it appeared in October 2023.
 
-_**Note:** Version 1.0.0-beta of the Trustworthy AI Life Cycle workflow is experimental. 
+_**Note:** Version 1.1.0-beta and previous versions of the Trustworthy AI Life Cycle workflow are experimental. 
 Your thoughts, questions, and comments are welcome to enhance future versions of this workflow. 
 Leave feedback using the **Issues** tab of the [Model Management Resources](https://github.com/sassoftware/model-management-resources) GitHub repository._ 
 

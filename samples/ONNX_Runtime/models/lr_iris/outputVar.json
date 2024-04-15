@@ -1,0 +1,8 @@
+[
+    {
+        "name": "EM_CLASSIFICATION",
+        "level": "nominal",
+        "type": "string",
+        "length": 1
+    }
+]
