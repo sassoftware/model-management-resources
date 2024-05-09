@@ -48,7 +48,7 @@ available through the SAS Viya platform Identities service and should have the a
 
 The workflow defines user-customizable timer settings. After you have imported the **Trustworthy_AI_Life_Cycle** definition, select the definition and navigate to the following subprocesses to customize the timer settings:
 
-1. The length of time before initiating model performance monitoring; the default is set to one month.
+1. The time delay between model performance monitoring cycles; the default is set to one month.
 
 	a. Navigate to the first step of subprocess 8.1 to access this timer node.
 
@@ -60,7 +60,7 @@ The workflow defines user-customizable timer settings. After you have imported t
 
 	a. Navigate to the step after node 8.1.2 to access this timer node.
 
-4. The length of time before initiating a review of the project; the default is set to six months.
+4. The time delay between project review cycles; the default is set to six months.
 
 	a. Navigate to the first step of subprocess 8.2 to access this timer node.
 

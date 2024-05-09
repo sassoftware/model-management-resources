@@ -47,7 +47,7 @@ sas-viya models destination createAzure --name AzureDemo
 --tenantId b1c14d5c-3625-45b3-a430-9552373a0c2f --subscriptionId 224f27e0-745f-452c-a442-70e79d24ce7f 
 --resourceGroupName modelManager --kubernetesCluster azureAKS  --region eastus --credDomainID domainAzure 
 --validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com 
---gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73
+--gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 --deploymentGitFolder /deploymentTest
 ```
 
 ## Example 3: Create an Azure Destination with Git and Database Support

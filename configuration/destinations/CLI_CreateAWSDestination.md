@@ -41,7 +41,7 @@ sas-viya models destination createAWS --name AWSDemo
 --identityId SASAdministrators --identityType group --kubernetesCluster mm-docker-models-eks 
 --region us-east-1 --credDomainID domainAWS --validationNamespace default 
 --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com 
---gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73
+--gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 --deploymentGitFolder /deploymentTest
 ```
 
 ## Example 3: Create an Amazon Web Services Destination with Git and Database Support
