@@ -43,7 +43,7 @@ sas-viya models destination createPD --name MyPrivateDocker
 --identityId SASAdministrators --identityType group --baseRepoURL registry.myserver.com/mmrepo
 --kubeURL https://k8s-master.modelmanager.myserver.com:6443 --credDomainID pdOracleDomain 
 --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git --gitUserEmail myemail@server.com 
---gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
+--gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 --deploymentGitFolder /deploymentTest
 ```
 
 ## Example 3: Create a Private Docker Destination with Git and Database Support
