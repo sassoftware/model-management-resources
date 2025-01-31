@@ -1,0 +1,527 @@
+{
+  "name": "dmcas_roc",
+  "revision": 0,
+  "order": 0,
+  "parameterMap": {
+    "_DataRole_": {
+      "parameter": "_DataRole_",
+      "type": "char",
+      "label": "Data Role",
+      "length": 10,
+      "order": 1,
+      "values": "_DataRole_",
+      "preformatted": false
+    },
+    "_PartInd_": {
+      "parameter": "_PartInd_",
+      "type": "num",
+      "label": "Partition Indicator",
+      "length": 8,
+      "order": 2,
+      "values": "_PartInd_",
+      "preformatted": false
+    },
+    "_PartInd__f": {
+      "parameter": "_PartInd__f",
+      "type": "char",
+      "label": "Formatted Partition",
+      "length": 12,
+      "order": 3,
+      "values": "_PartInd__f",
+      "preformatted": false
+    },
+    "_Column_": {
+      "parameter": "_Column_",
+      "type": "char",
+      "label": "Analysis Variable",
+      "length": 32,
+      "order": 4,
+      "values": "_Column_",
+      "preformatted": false
+    },
+    "_Event_": {
+      "parameter": "_Event_",
+      "type": "char",
+      "label": "Event",
+      "length": 8,
+      "order": 5,
+      "values": "_Event_",
+      "preformatted": false
+    },
+    "_Cutoff_": {
+      "parameter": "_Cutoff_",
+      "type": "num",
+      "label": "Cutoff",
+      "length": 8,
+      "order": 6,
+      "values": "_Cutoff_",
+      "preformatted": false
+    },
+    "_Sensitivity_": {
+      "parameter": "_Sensitivity_",
+      "type": "num",
+      "label": "Sensitivity",
+      "length": 8,
+      "order": 7,
+      "values": "_Sensitivity_",
+      "preformatted": false
+    },
+    "_Specificity_": {
+      "parameter": "_Specificity_",
+      "type": "num",
+      "label": "Specificity",
+      "length": 8,
+      "order": 8,
+      "values": "_Specificity_",
+      "preformatted": false
+    },
+    "_FPR_": {
+      "parameter": "_FPR_",
+      "type": "num",
+      "label": "False Positive Rate",
+      "length": 8,
+      "order": 9,
+      "values": "_FPR_",
+      "preformatted": false
+    },
+    "_OneMinusSpecificity_": {
+      "parameter": "_OneMinusSpecificity_",
+      "type": "num",
+      "label": "1 - Specificity",
+      "length": 8,
+      "order": 10,
+      "values": "_OneMinusSpecificity_",
+      "preformatted": false
+    },
+    "_TargetName_": {
+      "parameter": "_TargetName_",
+      "type": "char",
+      "label": "Target Name",
+      "length": 20,
+      "order": 11,
+      "values": "_TargetName_",
+      "preformatted": false
+    }
+  },
+  "data": [
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": "Inf",
+        "_Sensitivity_": 0,
+        "_Specificity_": 1,
+        "_FPR_": 0,
+        "_OneMinusSpecificity_": 0,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 1
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 1,
+        "_Sensitivity_": 0.2667,
+        "_Specificity_": 1,
+        "_FPR_": 0,
+        "_OneMinusSpecificity_": 0,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 2
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.9167,
+        "_Sensitivity_": 0.4,
+        "_Specificity_": 1,
+        "_FPR_": 0,
+        "_OneMinusSpecificity_": 0,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 3
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.6667,
+        "_Sensitivity_": 0.5333,
+        "_Specificity_": 0.9845,
+        "_FPR_": 0.0155,
+        "_OneMinusSpecificity_": 0.0155,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 4
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.1111,
+        "_Sensitivity_": 0.5333,
+        "_Specificity_": 0.969,
+        "_FPR_": 0.031,
+        "_OneMinusSpecificity_": 0.031,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 5
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0909,
+        "_Sensitivity_": 0.5333,
+        "_Specificity_": 0.9535,
+        "_FPR_": 0.0465,
+        "_OneMinusSpecificity_": 0.0465,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 6
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0769,
+        "_Sensitivity_": 0.5333,
+        "_Specificity_": 0.938,
+        "_FPR_": 0.062,
+        "_OneMinusSpecificity_": 0.062,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 7
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0426,
+        "_Sensitivity_": 1,
+        "_Specificity_": 0,
+        "_FPR_": 1,
+        "_OneMinusSpecificity_": 1,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 8
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": "Inf",
+        "_Sensitivity_": 0,
+        "_Specificity_": 1,
+        "_FPR_": 0,
+        "_OneMinusSpecificity_": 0,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 9
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 1,
+        "_Sensitivity_": 0.2135,
+        "_Specificity_": 0.9989,
+        "_FPR_": 0.0011,
+        "_OneMinusSpecificity_": 0.0011,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 10
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.9167,
+        "_Sensitivity_": 0.3034,
+        "_Specificity_": 0.9978,
+        "_FPR_": 0.0022,
+        "_OneMinusSpecificity_": 0.0022,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 11
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.6667,
+        "_Sensitivity_": 0.4831,
+        "_Specificity_": 0.9847,
+        "_FPR_": 0.0153,
+        "_OneMinusSpecificity_": 0.0153,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 12
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.1111,
+        "_Sensitivity_": 0.4944,
+        "_Specificity_": 0.9727,
+        "_FPR_": 0.0273,
+        "_OneMinusSpecificity_": 0.0273,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 13
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0909,
+        "_Sensitivity_": 0.5056,
+        "_Specificity_": 0.9607,
+        "_FPR_": 0.0393,
+        "_OneMinusSpecificity_": 0.0393,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 14
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0769,
+        "_Sensitivity_": 0.5169,
+        "_Specificity_": 0.9323,
+        "_FPR_": 0.0677,
+        "_OneMinusSpecificity_": 0.0677,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 15
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0426,
+        "_Sensitivity_": 1,
+        "_Specificity_": 0.0044,
+        "_FPR_": 0.9956,
+        "_OneMinusSpecificity_": 0.9956,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 16
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0,
+        "_Sensitivity_": 1,
+        "_Specificity_": 0,
+        "_FPR_": 1,
+        "_OneMinusSpecificity_": 1,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 17
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": "Inf",
+        "_Sensitivity_": 0,
+        "_Specificity_": 1,
+        "_FPR_": 0,
+        "_OneMinusSpecificity_": 0,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 18
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 1,
+        "_Sensitivity_": 0.1429,
+        "_Specificity_": 1,
+        "_FPR_": 0,
+        "_OneMinusSpecificity_": 0,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 19
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.9167,
+        "_Sensitivity_": 0.2143,
+        "_Specificity_": 1,
+        "_FPR_": 0,
+        "_OneMinusSpecificity_": 0,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 20
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.6667,
+        "_Sensitivity_": 0.3571,
+        "_Specificity_": 0.9882,
+        "_FPR_": 0.0118,
+        "_OneMinusSpecificity_": 0.0118,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 21
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.1111,
+        "_Sensitivity_": 0.3571,
+        "_Specificity_": 0.9764,
+        "_FPR_": 0.0236,
+        "_OneMinusSpecificity_": 0.0236,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 22
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0909,
+        "_Sensitivity_": 0.3571,
+        "_Specificity_": 0.9646,
+        "_FPR_": 0.0354,
+        "_OneMinusSpecificity_": 0.0354,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 23
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0769,
+        "_Sensitivity_": 0.3929,
+        "_Specificity_": 0.9409,
+        "_FPR_": 0.0591,
+        "_OneMinusSpecificity_": 0.0591,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 24
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0.0426,
+        "_Sensitivity_": 1,
+        "_Specificity_": 0.0157,
+        "_FPR_": 0.9843,
+        "_OneMinusSpecificity_": 0.9843,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 25
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Cutoff_": 0,
+        "_Sensitivity_": 1,
+        "_Specificity_": 0,
+        "_FPR_": 1,
+        "_OneMinusSpecificity_": 1,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 26
+    }
+  ],
+  "version": 1,
+  "yInteger": false,
+  "xInteger": false
+}

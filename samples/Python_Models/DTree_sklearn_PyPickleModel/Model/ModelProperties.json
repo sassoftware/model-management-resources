@@ -1,16 +1,20 @@
 {
     "name": "Home Equity Loan Classification Tree",
-    "description": " : BAD = JOB + REASON + CLAGE + CLNO + DEBTINC + DELINQ + DEROG + NINQ + YOJ",
-    "function": "classification",
+    "description": "Description for Home Equity Loan Classification Tree model",
     "scoreCodeType": "python",
-    "trainTable": " ",
+    "trainTable": "cas-shared-default/Public/HMEQCLASSTREE_TRAIN_DATA",
     "trainCodeType": "Python",
-    "algorithm": "tree",
+    "algorithm": "Decision Tree",
+    "function": "classification",
     "targetVariable": "BAD",
-    "targetEvent": "1",
-    "targetLevel": "BINARY",
-    "eventProbVar": "EM_EVENTPROBABILITY",
+    "targetEvent": "0",
+    "targetLevel": "Binary",
+    "eventProbVar": "P_0",
     "modeler": "sasdemo",
     "tool": "Python 3",
-    "toolVersion": "3.8.3"
+    "toolVersion": "3.9.13",
+    "properties": [],
+    "eventPercentage": "0.09280677009873",
+    "selectionStatistic": "_KS_",
+    "selectionStatisticValue": "1.0"
 }

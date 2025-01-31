@@ -1,0 +1,159 @@
+{
+    "creationTimeStamp": "0001-01-01T00:00:00Z",
+    "modifiedTimeStamp": "0001-01-01T00:00:00Z",
+    "revision": 0,
+    "name": "dmcas_relativeimportance",
+    "version": 0,
+    "order": 0,
+    "parameterMap": {
+        "LABEL": {
+            "label": "Variable Label",
+            "length": 256,
+            "order": 1,
+            "parameter": "LABEL",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "LABEL"
+            ]
+        },
+        "LEVEL": {
+            "label": "Variable Level",
+            "length": 10,
+            "order": 5,
+            "parameter": "LEVEL",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "LEVEL"
+            ]
+        },
+        "ROLE": {
+            "label": "Role",
+            "length": 32,
+            "order": 4,
+            "parameter": "ROLE",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "ROLE"
+            ]
+        },
+        "RelativeImportance": {
+            "label": "Relative Importance",
+            "length": 8,
+            "order": 3,
+            "parameter": "RelativeImportance",
+            "preformatted": false,
+            "type": "num",
+            "values": [
+                "RelativeImportance"
+            ]
+        },
+        "Variable": {
+            "label": "Variable Name",
+            "length": 255,
+            "order": 2,
+            "parameter": "Variable",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "Variable"
+            ]
+        }
+    },
+    "data": [
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "INTERVAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "1.0",
+                "Variable": "CLNO"
+            },
+            "rowNumber": 1
+        },
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "INTERVAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "0.43952717202512",
+                "Variable": "CLAGE"
+            },
+            "rowNumber": 2
+        },
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "INTERVAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "0.38841224484828",
+                "Variable": "YOJ"
+            },
+            "rowNumber": 3
+        },
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "INTERVAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "0.34692846174455",
+                "Variable": "DEBTINC"
+            },
+            "rowNumber": 4
+        },
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "INTERVAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "0.31115423206074",
+                "Variable": "NINQ"
+            },
+            "rowNumber": 5
+        },
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "NOMINAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "0.23229748902881",
+                "Variable": "JOB"
+            },
+            "rowNumber": 6
+        },
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "INTERVAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "0.13359608543462",
+                "Variable": "DELINQ"
+            },
+            "rowNumber": 7
+        },
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "INTERVAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "0.11152047530153",
+                "Variable": "DEROG"
+            },
+            "rowNumber": 8
+        },
+        {
+            "dataMap": {
+                "LABEL": "",
+                "LEVEL": "NOMINAL",
+                "ROLE": "INPUT",
+                "RelativeImportance": "0.09470365659506",
+                "Variable": "REASON"
+            },
+            "rowNumber": 9
+        }
+    ],
+    "xInteger": false,
+    "yInteger": false
+}

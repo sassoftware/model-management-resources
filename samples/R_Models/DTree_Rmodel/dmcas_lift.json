@@ -1,0 +1,367 @@
+{
+  "name": "dmcas_lift",
+  "revision": 0,
+  "order": 0,
+  "parameterMap": {
+    "_DataRole_": {
+      "parameter": "_DataRole_",
+      "type": "char",
+      "label": "Data Role",
+      "length": 10,
+      "order": 1,
+      "values": "_DataRole_",
+      "preformatted": false
+    },
+    "_PartInd_": {
+      "parameter": "_PartInd_",
+      "type": "num",
+      "label": "Partition Indicator",
+      "length": 8,
+      "order": 2,
+      "values": "_PartInd_",
+      "preformatted": false
+    },
+    "_PartInd__f": {
+      "parameter": "_PartInd__f",
+      "type": "char",
+      "label": "Formatted Partition",
+      "length": 12,
+      "order": 3,
+      "values": "_PartInd__f",
+      "preformatted": false
+    },
+    "_Column_": {
+      "parameter": "_Column_",
+      "type": "char",
+      "label": "Analysis Variable",
+      "length": 32,
+      "order": 4,
+      "values": "_Column_",
+      "preformatted": false
+    },
+    "_Event_": {
+      "parameter": "_Event_",
+      "type": "char",
+      "label": "Event",
+      "length": 8,
+      "order": 5,
+      "values": "_Event_",
+      "preformatted": false
+    },
+    "_Depth_": {
+      "parameter": "_Depth_",
+      "type": "num",
+      "label": "Depth",
+      "length": 8,
+      "order": 6,
+      "values": "_Depth_",
+      "preformatted": false
+    },
+    "_NObs_": {
+      "parameter": "_NObs_",
+      "type": "num",
+      "label": "Sum of Frequencies",
+      "length": 8,
+      "order": 7,
+      "values": "_NObs_",
+      "preformatted": false
+    },
+    "_Gain_": {
+      "parameter": "_Gain_",
+      "type": "num",
+      "label": "Gain",
+      "length": 8,
+      "order": 8,
+      "values": "_Gain_",
+      "preformatted": false
+    },
+    "_Lift_": {
+      "parameter": "_Lift_",
+      "type": "num",
+      "label": "Lift",
+      "length": 8,
+      "order": 9,
+      "values": "_Lift_",
+      "preformatted": false
+    },
+    "_CumLift_": {
+      "parameter": "_CumLift_",
+      "type": "num",
+      "label": "Cumulative Lift",
+      "length": 8,
+      "order": 10,
+      "values": "_CumLift_",
+      "preformatted": false
+    },
+    "_Resp_": {
+      "parameter": "_Resp_",
+      "type": "num",
+      "label": "Captured Response Percentage",
+      "length": 8,
+      "order": 11,
+      "values": "_Resp_",
+      "preformatted": false
+    },
+    "_CumResp_": {
+      "parameter": "_CumResp_",
+      "type": "num",
+      "label": "Cumulative Captured Response Percentage",
+      "length": 8,
+      "order": 12,
+      "values": "_CumResp_",
+      "preformatted": false
+    },
+    "_PctResp_": {
+      "parameter": "_PctResp_",
+      "type": "num",
+      "label": "% Response",
+      "length": 8,
+      "order": 13,
+      "values": "_PctResp_",
+      "preformatted": false
+    },
+    "_CumPctResp_": {
+      "parameter": "_CumPctResp_",
+      "type": "num",
+      "label": "Cumulative % Response",
+      "length": 8,
+      "order": 14,
+      "values": "_CumPctResp_",
+      "preformatted": false
+    },
+    "_TargetName_": {
+      "parameter": "_TargetName_",
+      "type": "char",
+      "label": "Target Name",
+      "length": 20,
+      "order": 15,
+      "values": "_TargetName_",
+      "preformatted": false
+    }
+  },
+  "data": [
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 4.1667,
+        "_NObs_": 6,
+        "_Gain_": 6,
+        "_Lift_": 9.6,
+        "_CumLift_": 9.6,
+        "_Resp_": 40,
+        "_CumResp_": 40,
+        "_PctResp_": 100,
+        "_CumPctResp_": 100,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 1
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 9.7222,
+        "_NObs_": 8,
+        "_Gain_": 2,
+        "_Lift_": 2.4,
+        "_CumLift_": 5.4857,
+        "_Resp_": 13.3333,
+        "_CumResp_": 53.3333,
+        "_PctResp_": 25,
+        "_CumPctResp_": 57.1429,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 2
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 11.1111,
+        "_NObs_": 2,
+        "_Gain_": 0,
+        "_Lift_": 0,
+        "_CumLift_": 4.8,
+        "_Resp_": 0,
+        "_CumResp_": 53.3333,
+        "_PctResp_": 0,
+        "_CumPctResp_": 50,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 3
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "VALIDATE",
+        "_PartInd_": 0,
+        "_formattedPartition_": "           0",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 100,
+        "_NObs_": 128,
+        "_Gain_": 7,
+        "_Lift_": 0.525,
+        "_CumLift_": 1,
+        "_Resp_": 46.6667,
+        "_CumResp_": 100,
+        "_PctResp_": 5.4688,
+        "_CumPctResp_": 10.4167,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 4
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 2.8856,
+        "_NObs_": 29,
+        "_Gain_": 27,
+        "_Lift_": 10.5134,
+        "_CumLift_": 10.5134,
+        "_Resp_": 30.3371,
+        "_CumResp_": 30.3371,
+        "_PctResp_": 93.1034,
+        "_CumPctResp_": 93.1034,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 5
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 8.0597,
+        "_NObs_": 52,
+        "_Gain_": 18,
+        "_Lift_": 3.9088,
+        "_CumLift_": 6.2734,
+        "_Resp_": 20.2247,
+        "_CumResp_": 50.5618,
+        "_PctResp_": 34.6154,
+        "_CumPctResp_": 55.5556,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 6
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 10.7463,
+        "_NObs_": 27,
+        "_Gain_": 1,
+        "_Lift_": 0.4182,
+        "_CumLift_": 4.8096,
+        "_Resp_": 1.1236,
+        "_CumResp_": 51.6854,
+        "_PctResp_": 3.7037,
+        "_CumPctResp_": 42.5926,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 7
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TRAIN",
+        "_PartInd_": 1,
+        "_formattedPartition_": "           1",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 100,
+        "_NObs_": 897,
+        "_Gain_": 43,
+        "_Lift_": 0.5413,
+        "_CumLift_": 1,
+        "_Resp_": 48.3146,
+        "_CumResp_": 100,
+        "_PctResp_": 4.7938,
+        "_CumPctResp_": 8.8557,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 8
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 4.6099,
+        "_NObs_": 13,
+        "_Gain_": 10,
+        "_Lift_": 7.7473,
+        "_CumLift_": 7.7473,
+        "_Resp_": 35.7143,
+        "_CumResp_": 35.7143,
+        "_PctResp_": 76.9231,
+        "_CumPctResp_": 76.9231,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 9
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 9.2199,
+        "_NObs_": 13,
+        "_Gain_": 1,
+        "_Lift_": 0.7747,
+        "_CumLift_": 4.261,
+        "_Resp_": 3.5714,
+        "_CumResp_": 39.2857,
+        "_PctResp_": 7.6923,
+        "_CumPctResp_": 42.3077,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 10
+    },
+    {
+      "dataMap": {
+        "_DataRole_": "TEST",
+        "_PartInd_": 2,
+        "_formattedPartition_": "           2",
+        "_Column_": "P_Actual1",
+        "_Event_": 1,
+        "_Depth_": 100,
+        "_NObs_": 256,
+        "_Gain_": 17,
+        "_Lift_": 0.6688,
+        "_CumLift_": 1,
+        "_Resp_": 60.7143,
+        "_CumResp_": 100,
+        "_PctResp_": 6.6406,
+        "_CumPctResp_": 9.9291,
+        "_TargetName_": "Actual"
+      },
+      "rowNumber": 11
+    }
+  ],
+  "version": 1,
+  "yInteger": false,
+  "xInteger": false
+}
