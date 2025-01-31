@@ -15,7 +15,7 @@ This directory contains examples of Jupyter notebooks, Python code, and R code t
   - [Create container images in an OpenShift environment](#create-container-images-in-an-openshift-environment)
   - [Additional Resources](#additional-resources)
 
-_Note: Contributions from users other than the SAS Model Manager support team can be added to the [/Python/external-examples](./Python/external-examples/README.md) and [/R/external-examples](R/external-examples/README.md) subdirectories._
+___Note:__ Contributions from users other than the SAS Model Manager support team can be added to the [/Python/external-examples](./Python/external-examples/README.md) and [/R/external-examples](R/external-examples/README.md) subdirectories._
 
 ## Calculate Statistics and Relative Variable Importance for a Model, and then Generate JSON Files
 
