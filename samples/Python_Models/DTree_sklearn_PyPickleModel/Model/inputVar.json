@@ -1,56 +1,56 @@
 [
     {
         "name": "JOB",
-        "length": 7,
+        "level": "nominal",
         "type": "string",
-        "level": "nominal"
+        "length": 7
     },
     {
         "name": "REASON",
-        "length": 7,
+        "level": "nominal",
         "type": "string",
-        "level": "nominal"
+        "length": 7
     },
     {
         "name": "CLAGE",
-        "length": 8,
+        "level": "interval",
         "type": "decimal",
-        "level": "interval"
+        "length": 8
     },
     {
         "name": "CLNO",
-        "length": 8,
+        "level": "interval",
         "type": "decimal",
-        "level": "interval"
+        "length": 8
     },
     {
         "name": "DEBTINC",
-        "length": 8,
+        "level": "interval",
         "type": "decimal",
-        "level": "interval"
+        "length": 8
     },
     {
         "name": "DELINQ",
-        "length": 8,
+        "level": "interval",
         "type": "decimal",
-        "level": "interval"
+        "length": 8
     },
     {
         "name": "DEROG",
-        "length": 8,
+        "level": "interval",
         "type": "decimal",
-        "level": "interval"
+        "length": 8
     },
     {
         "name": "NINQ",
-        "length": 8,
+        "level": "interval",
         "type": "decimal",
-        "level": "interval"
+        "length": 8
     },
     {
         "name": "YOJ",
-        "length": 8,
+        "level": "interval",
         "type": "decimal",
-        "level": "interval"
+        "length": 8
     }
 ]

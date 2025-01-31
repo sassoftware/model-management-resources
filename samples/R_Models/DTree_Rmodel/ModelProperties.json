@@ -1,16 +1,16 @@
 {
-  "trainTable": "",
-  "trainCodeType": "r",
-  "description": "",
-  "tool": "r",
-  "toolVersion": "",
+  "name": "dtree",
+  "description": "R model",
+  "function": "Classification",
+  "scoreCodeType": "R",
+  "trainTable": "hmeq_train",
+  "trainCodeType": "R",
+  "algorithm": "Decision Tree",
   "targetVariable": "BAD",
-  "scoreCodeType": "r",
-  "function": "classification",
-  "eventProbVar": "P_BAD1",
-  "modeler": "sasdemo",
-  "name": "DTree_R",
   "targetEvent": "1",
-  "targetLevel": "BINARY",
-  "algorithm": "Decision Tree"
+  "targetLevel": "Binary",
+  "eventProbVar": "EM_EVENTPROBABILITY",
+  "modeler": "sasdemo",
+  "tool": "R",
+  "toolVersion": "4.4.1"
 }

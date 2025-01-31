@@ -1,0 +1,778 @@
+{
+    "creationTimeStamp": "0001-01-01T00:00:00Z",
+    "modifiedTimeStamp": "0001-01-01T00:00:00Z",
+    "revision": 0,
+    "name": "maxDifferences",
+    "version": 0,
+    "order": 0,
+    "parameterMap": {
+        "BASE": {
+            "label": "Base Level",
+            "length": 100,
+            "order": 4,
+            "parameter": "BASE",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "BASE"
+            ]
+        },
+        "COMPARE": {
+            "label": "Comparison Level",
+            "length": 100,
+            "order": 5,
+            "parameter": "COMPARE",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "COMPARE"
+            ]
+        },
+        "Metric": {
+            "label": "Metric",
+            "length": 15,
+            "order": 6,
+            "parameter": "Metric",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "Metric"
+            ]
+        },
+        "MetricLabel": {
+            "label": "Metric Label",
+            "length": 42,
+            "order": 7,
+            "parameter": "MetricLabel",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "MetricLabel"
+            ]
+        },
+        "VLABEL": {
+            "label": "Variable Label",
+            "length": 256,
+            "order": 2,
+            "parameter": "VLABEL",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "VLABEL"
+            ]
+        },
+        "_DATAROLE_": {
+            "label": "Data Role",
+            "length": 8,
+            "order": 3,
+            "parameter": "_DATAROLE_",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "_DATAROLE_"
+            ]
+        },
+        "_VARIABLE_": {
+            "label": "Variable",
+            "length": 255,
+            "order": 1,
+            "parameter": "_VARIABLE_",
+            "preformatted": false,
+            "type": "char",
+            "values": [
+                "_VARIABLE_"
+            ]
+        },
+        "maxdiff": {
+            "label": "Maximum Metric Difference",
+            "length": 8,
+            "order": 8,
+            "parameter": "maxdiff",
+            "preformatted": false,
+            "type": "num",
+            "values": [
+                "maxdiff"
+            ]
+        }
+    },
+    "data": [
+        {
+            "dataMap": {
+                "BASE": "Mgr",
+                "COMPARE": "ProfExe",
+                "Metric": "P_BAD1",
+                "MetricLabel": "Average Predicted: BAD=1",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.0187450477509"
+            },
+            "rowNumber": 1
+        },
+        {
+            "dataMap": {
+                "BASE": "ProfExe",
+                "COMPARE": "Mgr",
+                "Metric": "P_BAD0",
+                "MetricLabel": "Average Predicted: BAD=0",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.0187450477509"
+            },
+            "rowNumber": 2
+        },
+        {
+            "dataMap": {
+                "BASE": "ProfExe",
+                "COMPARE": "Sales",
+                "Metric": "TPR",
+                "MetricLabel": "True Positive Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.28774928774928"
+            },
+            "rowNumber": 3
+        },
+        {
+            "dataMap": {
+                "BASE": "Office",
+                "COMPARE": "ProfExe",
+                "Metric": "FPR",
+                "MetricLabel": "False Positive Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.0126050420168"
+            },
+            "rowNumber": 4
+        },
+        {
+            "dataMap": {
+                "BASE": "ProfExe",
+                "COMPARE": "Office",
+                "Metric": "TNR",
+                "MetricLabel": "True Negative Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.0126050420168"
+            },
+            "rowNumber": 5
+        },
+        {
+            "dataMap": {
+                "BASE": "Sales",
+                "COMPARE": "ProfExe",
+                "Metric": "FNR",
+                "MetricLabel": "False Negative Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.28774928774928"
+            },
+            "rowNumber": 6
+        },
+        {
+            "dataMap": {
+                "BASE": "Office",
+                "COMPARE": "ProfExe",
+                "Metric": "FDR",
+                "MetricLabel": "False Discovery Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.3"
+            },
+            "rowNumber": 7
+        },
+        {
+            "dataMap": {
+                "BASE": "ProfExe",
+                "COMPARE": "Sales",
+                "Metric": "ACC",
+                "MetricLabel": "Accuracy",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.15373300872387"
+            },
+            "rowNumber": 8
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "Other",
+                "Metric": "C",
+                "MetricLabel": "Area under ROC",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.07467579895765"
+            },
+            "rowNumber": 9
+        },
+        {
+            "dataMap": {
+                "BASE": "ProfExe",
+                "COMPARE": "Sales",
+                "Metric": "F1",
+                "MetricLabel": "F1 Score",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.30792682926829"
+            },
+            "rowNumber": 10
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "Other",
+                "Metric": "GINI",
+                "MetricLabel": "Gini Coefficient",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.14935159791531"
+            },
+            "rowNumber": 11
+        },
+        {
+            "dataMap": {
+                "BASE": "Sales",
+                "COMPARE": "ProfExe",
+                "Metric": "MISCEVENT",
+                "MetricLabel": "Event Misclassification Rate at Cutoff",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.15373300872387"
+            },
+            "rowNumber": 12
+        },
+        {
+            "dataMap": {
+                "BASE": "Sales",
+                "COMPARE": "Self",
+                "Metric": "MISCEVENTKS",
+                "MetricLabel": "Event Misclassification Rate at Maximum KS",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.06173092698933"
+            },
+            "rowNumber": 13
+        },
+        {
+            "dataMap": {
+                "BASE": "Sales",
+                "COMPARE": "ProfExe",
+                "Metric": "MCE",
+                "MetricLabel": "Misclassification Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.15373300872387"
+            },
+            "rowNumber": 14
+        },
+        {
+            "dataMap": {
+                "BASE": "Sales",
+                "COMPARE": "ProfExe",
+                "Metric": "ASE",
+                "MetricLabel": "Average Squared Error",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.13664670819055"
+            },
+            "rowNumber": 15
+        },
+        {
+            "dataMap": {
+                "BASE": "Sales",
+                "COMPARE": "ProfExe",
+                "Metric": "RASE",
+                "MetricLabel": "Root Average Squared Error",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.23130179839031"
+            },
+            "rowNumber": 16
+        },
+        {
+            "dataMap": {
+                "BASE": "Sales",
+                "COMPARE": "ProfExe",
+                "Metric": "MCLL",
+                "MetricLabel": "Multiclass Log Loss",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.4455631640266"
+            },
+            "rowNumber": 17
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "Other",
+                "Metric": "maxKS",
+                "MetricLabel": "Best Kolmogorov-Smirnov along ROC",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.26760958277964"
+            },
+            "rowNumber": 18
+        },
+        {
+            "dataMap": {
+                "BASE": "ProfExe",
+                "COMPARE": "Sales",
+                "Metric": "cutoffKS",
+                "MetricLabel": "Kolmogorov-Smirnov at Cutoff",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.28774928774928"
+            },
+            "rowNumber": 19
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "Sales",
+                "Metric": "GAIN",
+                "MetricLabel": "Gain",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "2.91473586654309"
+            },
+            "rowNumber": 20
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "Office",
+                "Metric": "LIFT",
+                "MetricLabel": "Lift",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "4.9505918410484"
+            },
+            "rowNumber": 21
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "Office",
+                "Metric": "RESP",
+                "MetricLabel": "%% Captured Response",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "24.752959205242"
+            },
+            "rowNumber": 22
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "Sales",
+                "Metric": "CUMRESP",
+                "MetricLabel": "Cumulative %% Captured Response",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "29.1473586654309"
+            },
+            "rowNumber": 23
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "Sales",
+                "Metric": "CUMLIFT",
+                "MetricLabel": "Cumulative Lift",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "2.91473586654309"
+            },
+            "rowNumber": 24
+        },
+        {
+            "dataMap": {
+                "BASE": "Mgr",
+                "COMPARE": "ProfExe",
+                "Metric": "PREDICTED_EVENT",
+                "MetricLabel": "Average Prediction for Event",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.0187450477509"
+            },
+            "rowNumber": 25
+        },
+        {
+            "dataMap": {
+                "BASE": "Self",
+                "COMPARE": "ProfExe",
+                "Metric": "INTO_EVENT",
+                "MetricLabel": "Proportion into Event Level",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "JOB",
+                "maxdiff": "0.02758298270219"
+            },
+            "rowNumber": 26
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "P_BAD1",
+                "MetricLabel": "Average Predicted: BAD=1",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00898343385823"
+            },
+            "rowNumber": 27
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "P_BAD0",
+                "MetricLabel": "Average Predicted: BAD=0",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00898343385823"
+            },
+            "rowNumber": 28
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "TPR",
+                "MetricLabel": "True Positive Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.07287581699346"
+            },
+            "rowNumber": 29
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "FPR",
+                "MetricLabel": "False Positive Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00077445565923"
+            },
+            "rowNumber": 30
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "TNR",
+                "MetricLabel": "True Negative Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00077445565923"
+            },
+            "rowNumber": 31
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "FNR",
+                "MetricLabel": "False Negative Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.07287581699346"
+            },
+            "rowNumber": 32
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "FDR",
+                "MetricLabel": "False Discovery Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00457875457875"
+            },
+            "rowNumber": 33
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "ACC",
+                "MetricLabel": "Accuracy",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00823059558951"
+            },
+            "rowNumber": 34
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "C",
+                "MetricLabel": "Area under ROC",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.01562322084931"
+            },
+            "rowNumber": 35
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "F1",
+                "MetricLabel": "F1 Score",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.0670915800067"
+            },
+            "rowNumber": 36
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "GINI",
+                "MetricLabel": "Gini Coefficient",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.03124644169862"
+            },
+            "rowNumber": 37
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "MISCEVENT",
+                "MetricLabel": "Event Misclassification Rate at Cutoff",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00823059558951"
+            },
+            "rowNumber": 38
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "MISCEVENTKS",
+                "MetricLabel": "Event Misclassification Rate at Maximum KS",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.13126700237309"
+            },
+            "rowNumber": 39
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "MCE",
+                "MetricLabel": "Misclassification Rate",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00823059558951"
+            },
+            "rowNumber": 40
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "ASE",
+                "MetricLabel": "Average Squared Error",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00061571521175"
+            },
+            "rowNumber": 41
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "RASE",
+                "MetricLabel": "Root Average Squared Error",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00138888876412"
+            },
+            "rowNumber": 42
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "MCLL",
+                "MetricLabel": "Multiclass Log Loss",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "9.776805347e-05"
+            },
+            "rowNumber": 43
+        },
+        {
+            "dataMap": {
+                "BASE": "HomeImp",
+                "COMPARE": "DebtCon",
+                "Metric": "maxKS",
+                "MetricLabel": "Best Kolmogorov-Smirnov along ROC",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.01288319809609"
+            },
+            "rowNumber": 44
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "cutoffKS",
+                "MetricLabel": "Kolmogorov-Smirnov at Cutoff",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.07210136133422"
+            },
+            "rowNumber": 45
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "GAIN",
+                "MetricLabel": "Gain",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.02207411700312"
+            },
+            "rowNumber": 46
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "LIFT",
+                "MetricLabel": "Lift",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.33434431243761"
+            },
+            "rowNumber": 47
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "RESP",
+                "MetricLabel": "%% Captured Response",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "1.67172156218809"
+            },
+            "rowNumber": 48
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "CUMRESP",
+                "MetricLabel": "Cumulative %% Captured Response",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.22074117003123"
+            },
+            "rowNumber": 49
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "CUMLIFT",
+                "MetricLabel": "Cumulative Lift",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.02207411700312"
+            },
+            "rowNumber": 50
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "PREDICTED_EVENT",
+                "MetricLabel": "Average Prediction for Event",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00898343385823"
+            },
+            "rowNumber": 51
+        },
+        {
+            "dataMap": {
+                "BASE": "DebtCon",
+                "COMPARE": "HomeImp",
+                "Metric": "INTO_EVENT",
+                "MetricLabel": "Proportion into Event Level",
+                "VLABEL": "",
+                "_DATAROLE_": "TEST",
+                "_VARIABLE_": "REASON",
+                "maxdiff": "0.00603461249059"
+            },
+            "rowNumber": 52
+        }
+    ],
+    "xInteger": false,
+    "yInteger": false
+}
