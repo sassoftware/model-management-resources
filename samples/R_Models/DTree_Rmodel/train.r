@@ -1,21 +1,19 @@
-# Copyright (C) 2020, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.
-# SPDX-License-Identifier: Apache-2.0
+hmeq <- read.csv("./data/hmeq_train.csv")
 
-inputdata <- read.csv(file="hmeq_train.csv", header=TRUE, sep=",")
+hmeq <- hmeq |>
+  dplyr::select(-VALUE, -MORTDUE, -LOAN) |>
+  dplyr::mutate_at(c("BAD", "REASON", "JOB"), as.factor)
 
-for(i in 1:ncol(inputdata)){
-  if(i!= 5 && i!=6){
-    inputdata[is.na(inputdata[,i]), i] <- mean(inputdata[,i], na.rm = TRUE)
-  }
-}
+hmeq[hmeq == ""] <- NA
+hmeq <- na.omit(hmeq) 
+
+partition <- sample(c(1,2,3), replace = TRUE, prob = c(0.7, 0.2, 0.1), size = nrow(hmeq))
 
 library(rpart)
-# -----------------------------------------------
-# FIT THE LOGISTIC MODEL
-# -----------------------------------------------
-dtree<- rpart(BAD ~ MORTDUE + LOAN + VALUE + factor(REASON) + factor(JOB) + DEROG + CLAGE + NINQ + DELINQ + DEBTINC, data = inputdata)
+model <- rpart(formula = BAD ~ ., 
+               data = hmeq[partition == 1,], 
+               method = "class")
+               
+saveRDS(model, "dtree.rds", version = 2)
 
-# -----------------------------------------------
-# SAVE THE OUTPUT PARAMETER ESTIMATE TO LOCAL FILE OUTMODEL.RDA
-# -----------------------------------------------
-save(dtree, file="dtree.rda")
+

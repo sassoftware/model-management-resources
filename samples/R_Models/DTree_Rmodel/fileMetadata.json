@@ -10,5 +10,13 @@
   {
     "role": "score",
     "name": "score.R"
+  },
+  {
+    "role": "scoreResource",
+    "name": "dtree.rds"
+  },
+  {
+    "role": "train",
+    "name": "train.R"
   }
 ]

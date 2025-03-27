@@ -2,9 +2,10 @@
 
 This directory contains examples of Jupyter notebooks, Python code, and R code that can be used to perform the following SAS Model Manager tasks:
 - [Overview](#overview)
-  - [Calculate Fit Statistics, ROC, and Lift, and then Generate JSON Files](#calculate-fit-statistics-roc-and-lift-and-then-generate-json-files)
+  - [Calculate Statistics and Relative Variable Importance for a Model, and Then Generate JSON Files](#calculate-statistics-and-relative-variable-importance-for-a-model-and-then-generate-json-files)
   - [Get the Number of Published Models](#get-the-number-of-published-models)
   - [Build and Import a Trained Python Model](#build-and-import-a-trained-python-model)
+  - [Build and Import a Trained R model](#build-and-import-a-trained-r-model)
   - [Fit a Scoring Script for Python Model Containerization](#fit-a-scoring-script-for-python-model-containerization)
   - [Fit a Scoring Script for R Model Containerization](#fit-a-scoring-script-for-r-model-containerization)
   - [Upload Data to the SAS Cloud Analytics Services (CAS)](#upload-data-to-the-sas-cloud-analytics-services-cas)
@@ -14,16 +15,19 @@ This directory contains examples of Jupyter notebooks, Python code, and R code t
   - [Create container images in an OpenShift environment](#create-container-images-in-an-openshift-environment)
   - [Additional Resources](#additional-resources)
 
-_Note: Contributions from users other than the SAS Model Manager support team can be added to the [/Python/external-examples](./Python/external-examples/README.md) and [/R/external-examples](R/external-examples/README.md) subdirectories._
+___Note:__ Contributions from users other than the SAS Model Manager support team can be added to the [/Python/external-examples](./Python/external-examples/README.md) and [/R/external-examples](R/external-examples/README.md) subdirectories._
 
-## Calculate Fit Statistics, ROC, and Lift, and then Generate JSON Files
+## Calculate Statistics and Relative Variable Importance for a Model, and then Generate JSON Files
 
 When you compare models, the model comparison output includes model properties, user-defined properties, and variables. The model comparison output
 might also include fit statistics, and lift and ROC plots for the models if the required model files are available. The fit statistics, as well as
 plots for lift and ROC, can be produced using Python packages that generate JSON files. These JSON files are used to show the fit statistics
 and plots when comparing models in SAS Model Manager.
 
-To calculate fit statistics, ROC, and lift information when you build and import a trained Python model, see [ImportPythonModel.ipynb](Python/ImportPythonModel.ipynb) in the examples directory.
+You can also generate JSON files that include relative variable importance, misclassification statistics, and fairness assessment statistics. 
+This additional information is used to populate the Model Card tab of a model in the SAS Model Manager web application.
+
+To calculate statistics and relative variable importance for a model when you build and import a trained Python model, see [ImportPythonModel.ipynb](Python/ImportPythonModel.ipynb) in the examples directory.
 
 ## Get the Number of Published Models
 
@@ -39,6 +43,15 @@ Each model folder within the ZIP file is imported as a separate model object tha
 When you import models from a ZIP file into a project version, the hierarchical folder structure is ignored.
 
 To build and import a trained Python model, see [ImportPythonModel.ipynb](Python/ImportPythonModel.ipynb) in the examples directory.
+
+## Build and Import a Trained R Model
+
+An R model can be built and trained before importing the model in SAS Model Manager as a ZIP file. The ZIP file contains model files that are associated
+with a specific model and stored within the ZIP file. The ZIP file can contain model folders at the same level or in a hierarchical folder structure.
+Each model folder within the ZIP file is imported as a separate model object that contains the contents of the model folder.
+When you import models from a ZIP file into a project version, the hierarchical folder structure is ignored.
+
+To build and import a trained R model, see [Rmodel_QuickStartTutorial.md](R/Rmodel_QuickStartTutorial.md) in the examples directory.
 
 ## Fit a Scoring Script for Python Model Containerization
 
@@ -70,7 +83,7 @@ To upload data to CAS, see [UploadDataToCAS.ipynb](Python/UploadDataToCAS.ipynb)
 ## Delete Model Content Logs
 When you publish a model to a destination, there are log and SAS code files that are generated within the contents of a model object. 
 You can delete the files for a specific model, all models within a project, or all models within the common model repository. 
-The model content is only deleted for the following file types: ScoreCodeGen{}.sas or ScoreCodeGen{}.log. The most recent revision of each file type is not deleted.
+The model content is deleted only for the following file types: ScoreCodeGen{}.sas or ScoreCodeGen{}.log. The most recent revision of each file type is not deleted.
 
 To delete model content logs, see [DeleteModelContentLogs.ipynb](Python/DeleteModelContentLogs.ipynb) in the examples directory.
 

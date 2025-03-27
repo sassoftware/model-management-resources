@@ -1,14 +1,14 @@
 [
   {
-    "level": "",
-    "name": "P_BAD0",
+    "name": "EM_CLASSIFICATION",
     "length": 8,
-    "type": "decimal"
+    "type": "decimal",
+    "level": "interval"
   },
   {
-    "level": "",
-    "name": "P_BAD1",
+    "name": "EM_EVENTPROBABILITY",
     "length": 8,
-    "type": "decimal"
+    "type": "decimal",
+    "level": "interval"
   }
 ]

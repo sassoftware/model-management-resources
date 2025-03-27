@@ -9,10 +9,10 @@
     },
     {
         "role": "score",
-        "name": "hmeqClassTreeScore.py"
+        "name": "score_hmeqClassTree.py"
     },
     {
-        "role": "python pickle",
+        "role": "scoreResource",
         "name": "hmeqClassTree.pickle"
     }
 ]
