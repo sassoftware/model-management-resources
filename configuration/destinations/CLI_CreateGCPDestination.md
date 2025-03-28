@@ -22,8 +22,8 @@ _**Note:** For the following CLI examples, you will be prompted to enter a servi
 
 ```commandline
 sas-viya models destination create --type gcp --name GCPDemo 
---identityId SASAdministrators --identityType group --baseRepoURL "gcr.io/solorgasub7" 
---kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b --credDomainID domainGCP 
+--identityId SASAdministrators --identityType group --baseRepoURL "gcr.io/myserviceaccount" 
+--kubernetesCluster demo-gke --clusterLocation us-east1-b --credDomainID domainGCP 
 --validationNamespace default
 ```
 
@@ -32,7 +32,7 @@ OR
 ```commandline
 sas-viya models destination createGCP --name GCPDemo 
 --identityId SASAdministrators --identityType group --baseRepoURL "gcr.io/myserviceaccount" 
---kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b --credDomainID domainGCP 
+--kubernetesCluster demo-gke --clusterLocation us-east1-b --credDomainID domainGCP 
 --validationNamespace default
 ```
 
@@ -41,7 +41,7 @@ sas-viya models destination createGCP --name GCPDemo
 ```commandline
 sas-viya models destination createGCP --name GCPDemo 
 --identityId SASAdministrators --identityType group --baseRepoURL gcr.io/myserviceaccount 
---kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b 
+--kubernetesCluster demo-gke --clusterLocation us-east1-b 
 --serviceAccount myserviceaccount@gserviceaccount.com --credDomainID domainGCP 
 --validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 --deploymentGitFolder /deploymentTest
@@ -52,7 +52,7 @@ sas-viya models destination createGCP --name GCPDemo
 ```commandline
 sas-viya models destination createGCP --name GCPDemo 
 --identityId SASAdministrators --identityType group --baseRepoURL gcr.io/myserviceaccount 
---kubernetesCluster edmtestpub-gke --clusterLocation us-east1-b 
+--kubernetesCluster demo-gke --clusterLocation us-east1-b 
 --serviceAccount myserviceaccount@gserviceaccount.com --credDomainID domainGCP 
 --validationNamespace default --remoteRepoURL https://gitlab.myserver.com/sasdemo/sasdemo.git  --gitUserEmail myemail@server.com
 --gitUserId sasdemo --gitAccessToken D4bPHJvByqSFnxGBrQ73 
