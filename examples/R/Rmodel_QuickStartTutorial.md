@@ -6,9 +6,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This example walks you through the steps to generate the R model files for the SAS Model Manager Quick Start Tutorial. 
 The code is an extension of the r-sasctl README code found [here](https://github.com/sassoftware/r-sasctl). 
-It generates a ZIP file that can be imported directly into SAS Model Manager. The model can then be scored in CAS or 
-SAS Micro Analytic Service using the CAS Gateway action, as well as in container publishing destinations where the 
-R base image is used to create an R runtime container.
+It generates a ZIP file that can be imported directly into SAS Model Manager.
+The model can then be scored by running a scoring test, which uses the CAS Gateway action set.
+It can also be scored by running a publishing validation after the model has been published to a CAS 
+publishing destination, or a container publishing destination where the R base image is used to create
+an R runtime container.
 
 Note: A trained R sample model can be found here: [DTree_Rmodel](../../samples/R_Models/DTree_Rmodel)
 
