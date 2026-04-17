@@ -1,6 +1,6 @@
 # Creating Container Images in an OpenShift Environment
 
-_**Important**: This example applies only for SAS Viya 2022.12 - 2025.05 releases. Kaniko was deprecated with the 2025.06 release and replaced with BuildKit. For more information, see [Configure Container Publishing Destinations](https://documentation.sas.com/?cdcId=sasadmincdc&cdcVersion=latest&docsetId=calpubdest&docsetTarget=p02scrqf37kexwn1gi60khpshifz.htm#p1f2d2x0t2a3vvn1j88t6ix1f6gm) in SAS Viya Platform: Publishing Destinations._
+_**Important**: This example applies only for SAS Viya 2022.12 - 2025.05 releases. Kaniko was deprecated with the 2025.06 release and replaced with BuildKit. For more information, see [Configure Container Publishing Destinations](https://documentation.sas.com/?cdcId=sasadmincdc&cdcVersion=default&docsetId=calpubdest&docsetTarget=p02scrqf37kexwn1gi60khpshifz.htm#p1f2d2x0t2a3vvn1j88t6ix1f6gm) in SAS Viya Platform: Publishing Destinations._
 
 SAS Viya platform uses Kaniko to create container images for models and decisions when they are published to a container publishing destination. Because Kaniko requires root access to run, container images cannot be created when the SAS Viya platform is deployed in a Red Hat OpenShift environment. 
 In order to create container images within an OpenShift environment you must instead publish your models and decisions to a Git destination and then use Docker to create the container images.
